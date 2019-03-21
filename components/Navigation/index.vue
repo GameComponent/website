@@ -26,45 +26,13 @@
 }
 
 .dropdown__content {
+  border-radius: 5px;
   background: white;
+  will-change: width, height, transform;
 }
 
 .dropdown__content>ul>li {
   margin-bottom: 3.3em;
-}
-
-.header .content li::after {
-  clear: both;
-  content: '';
-  display: block;
-}
-
-.dropdown__background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 1px;
-  width: 1px;
-  background: #fff;
-  opacity: 0;
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
-  -webkit-transform-origin: top left;
-  -ms-transform-origin: top left;
-  transform-origin: top left;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  will-change: transform;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.dropdown__background--visible {
-  opacity: 1;
-  -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
-  transition: opacity 0.2s, -webkit-transform 0.2s;
-  transition: transform 0.2s, opacity 0.2s;
-  transition: transform 0.2s, opacity 0.2s, -webkit-transform 0.2s;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -101,10 +69,10 @@
     -webkit-transform: translateY(20px);
     -ms-transform: translateY(20px);
     transform: translateY(20px);
-    -webkit-transition: -webkit-transform 0.2s;
-    transition: -webkit-transform 0.2s;
-    transition: transform 0.2s;
-    transition: transform 0.2s, -webkit-transform 0.2s;
+    -webkit-transition: -webkit-transform 0.25s;
+    transition: -webkit-transform 0.25s;
+    transition: transform 0.25s;
+    transition: transform 0.25s, -webkit-transform 0.25s;
   }
 
   .dropdown__content {
@@ -115,10 +83,9 @@
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     will-change: transform, width, height;
-    -webkit-transition: visibility 0.2s;
-    transition: visibility 0.2s;
+    -webkit-transition: visibility 0.25s;
+    transition: visibility 0.25s;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
-    background: transparent;
   }
 
   .dropdown__content::before {
@@ -135,8 +102,8 @@
     border: 8px solid transparent;
     border-bottom-color: #fff;
     opacity: 0;
-    -webkit-transition: opacity 0.2s;
-    transition: opacity 0.2s;
+    -webkit-transition: opacity 0.25s;
+    transition: opacity 0.25s;
   }
   .header .dropdown__content>ul {
     position: relative;
@@ -148,10 +115,10 @@
 
   .dropdown__content--visible {
     visibility: visible;
-    -webkit-transition: width 0.2s, height 0.2s, -webkit-transform 0.2s;
-    transition: width 0.2s, height 0.2s, -webkit-transform 0.2s;
-    transition: transform 0.2s, width 0.2s, height 0.2s;
-    transition: transform 0.2s, width 0.2s, height 0.2s, -webkit-transform 0.2s;
+    -webkit-transition: width 0.25s, height 0.25s, -webkit-transform 0.25s;
+    transition: width 0.25s, height 0.25s, -webkit-transform 0.25s;
+    transition: transform 0.25s, width 0.25s, height 0.25s;
+    transition: transform 0.25s, width 0.25s, height 0.25s, -webkit-transform 0.25s;
   }
   .dropdown__content--visible::before {
     opacity: 1;
@@ -163,8 +130,8 @@
     opacity: 0;
     visibility: hidden;
     width: 100%;
-    -webkit-transition: opacity 0.2s, visibility 0.2s;
-    transition: opacity 0.2s, visibility 0.2s;
+    -webkit-transition: opacity 0.25s, visibility 0.25s;
+    transition: opacity 0.25s, visibility 0.25s;
   }
   .dropdown__item--active {
     opacity: 1;
@@ -174,11 +141,10 @@
     display: none;
   }
   .header .content {
-    padding: 2.2em 1.8em;
-    -webkit-transition: -webkit-transform 0.2s;
-    transition: -webkit-transform 0.2s;
-    transition: transform 0.2s;
-    transition: transform 0.2s, -webkit-transform 0.2s;
+    -webkit-transition: -webkit-transform 0.25s;
+    transition: -webkit-transform 0.25s;
+    transition: transform 0.25s;
+    transition: transform 0.25s, -webkit-transform 0.25s;
     text-align: left;
   }
   .header .content>ul::after {
@@ -239,13 +205,13 @@
             @mouseenter="handleMouseEnterItem"
             @mouseleave="handleMouseLeaveItem"
           >
-            <a
-              href="#0"
+            <nuxt-link
+              to="/services"
               class="font-medium no-underline text-black hover:text-blue"
               :class="{ 'text-blue': active === 'services' }"
             >
               Services
-            </a>
+            </nuxt-link>
           </li>
 
           <li
@@ -254,13 +220,13 @@
             @mouseenter="handleMouseEnterItem"
             @mouseleave="handleMouseLeaveItem"
           >
-            <a
-              href="#0"
+            <nuxt-link
+              to="/developers"
               class="font-medium no-underline text-black hover:text-blue"
               :class="{ 'text-blue': active === 'developers' }"
             >
               Developers
-            </a>
+            </nuxt-link>
           </li>
 
           <li
@@ -269,25 +235,24 @@
             @mouseenter="handleMouseEnterItem"
             @mouseleave="handleMouseLeaveItem"
           >
-            <a
-              href="#0"
+            <nuxt-link
+              to="/community"
               class="font-medium no-underline text-black hover:text-blue"
               :class="{ 'text-blue': active === 'community' }"
             >
               Community
-            </a>
+            </nuxt-link>
           </li>
 
           <li
             class="navigation__item has-dropdown links"
-            @mouseenter="handleMouseEnterItem"
           >
-            <a
-              href="#0"
+            <nuxt-link
+              to="/blog"
               class="font-medium no-underline text-black hover:text-blue"
             >
               Blog
-            </a>
+            </nuxt-link>
           </li>
         </ul>
       </nav>
@@ -311,32 +276,22 @@
               id="services"
               class="dropdown__item gallery"
               :class="{ 'dropdown__item--active': active === 'services' }"
-              style="width: 600px;"
             >
-              <a href="#0" class="label">About</a>
-              <div class="content">
-                <ul>
-                  <li>
-                    <a href="#0">
-                      <em>Title here</em> <span>A brief description here</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#0">
-                      <em>Title here</em> <span>A brief description here</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#0">
-                      <em>Title here</em> <span>A brief description here</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#0">
-                      <em>Title here</em> <span>A brief description here</span>
-                    </a>
-                  </li>
-                </ul>
+              <div class="content p-4">
+                <div class="clearfix">
+                  <div class="float-left">
+                    <img
+                      src="@/assets/icons/icon-external-link.svg"
+                      alt=""
+                      class="bg-green-lighter p-3 rounded-full"
+                      style="width: 48px; height: 48px"
+                    >
+                  </div>
+                  <div class="float-left ml-4">
+                    <div class="font-bold">Economy service</div>
+                    <div class="text-xs">Everything related to items, currencies and shops</div>
+                  </div>
+                </div>
               </div>
             </li>
 
@@ -439,11 +394,6 @@
               </div>
             </li>
           </ul>
-          <div
-            class="dropdown__background"
-            :class="{ 'dropdown__background--visible': active !== '' }"
-            :style="dropdownBackgroundStyle"
-          ></div>
         </div>
       </div>
     </div>
@@ -472,10 +422,6 @@ export default class Navigation extends Vue {
     width: '',
     height: '',
     transform: 'translateX(100%)',
-  };
-
-  dropdownBackgroundStyle: Object = {
-    transform: '',
   };
 
   handleMouseLeaveHeader() {
@@ -542,10 +488,6 @@ export default class Navigation extends Vue {
       width: `${width}px`,
       height: `${height}px`,
       transform: `translateX(${left}px)`,
-    };
-
-    this.dropdownBackgroundStyle = {
-      transform: `scaleX(${width}) scaleY(${height})`,
     };
   }
 
