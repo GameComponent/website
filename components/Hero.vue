@@ -1,6 +1,6 @@
 <template>
   <section class="background--grid">
-    <div class="container mx-auto clearfix pt-32 pb-64 px-8">
+    <div class="container mx-auto clearfix py-64 px-8">
       <div class="w-1/2 float-left">
         <h1 class="text-black text-5xl" style="letter-spacing: 0.5px;">
           We provide building blocks for your online game.

@@ -11,7 +11,7 @@
 
     <section>
       <div
-        class="container container--first content-box bg-white mx-auto rounded clearfix pt-16 px-8 mb-16 h-64 pb-32"
+        class="container container--first content-box bg-white mx-auto rounded clearfix py-16 px-8 mb-16 h-64 pb-32"
       >
         <div class="px-8">
           <div class="w-2/3 float-left relative">

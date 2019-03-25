@@ -90,13 +90,41 @@
             DOCUMENTATION
           </span>
           <ul class="list-reset text-white leading-normal mt-2">
-            <li>Documentation</li>
-            <li>Community</li>
-            <li>Webinars</li>
-            <li>Jobs</li>
-            <li>Partners</li>
-            <li>Enterprise</li>
-            <li>Contact</li>
+            <li>
+              <nuxt-link to="/developers/documentation" class="no-underline text-white hover:text-blue">
+                Documentation
+              </nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/community" class="no-underline text-white hover:text-blue">
+                Community
+              </nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/developers/webinars" class="no-underline text-white hover:text-blue">
+                Webinars
+              </nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/community" class="no-underline text-white hover:text-blue">
+                Jobs
+              </nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/partners" class="no-underline text-white hover:text-blue">
+                Partners
+              </nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/enterprise" class="no-underline text-white hover:text-blue">
+                Enterprise
+              </nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/contact" class="no-underline text-white hover:text-blue">
+                Contact
+              </nuxt-link>
+            </li>
           </ul>
         </div>
 
@@ -105,9 +133,15 @@
             SERVICE
           </span>
           <ul class="list-reset text-white leading-normal mt-2">
-            <li>Economy service</li>
-            <li>Pricing</li>
-            <li>Hosted</li>
+            <li>
+              Economy service
+            </li>
+            <li>
+              Pricing
+            </li>
+            <li>
+              Hosted
+            </li>
           </ul>
         </div>
 

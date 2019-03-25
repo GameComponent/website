@@ -11,8 +11,8 @@
 <template>
   <div>
     <section class="background--grid">
-      <div class="container mx-auto clearfix pb-32 px-8">
-        <div class="w-1/2 float-left pt-16 ">
+      <div class="container mx-auto clearfix py-32 px-8">
+        <div class="w-1/2 float-left">
           <h1 class="text-black text-5xl w-128" style="letter-spacing: 0.5px;">
             Community
           </h1>

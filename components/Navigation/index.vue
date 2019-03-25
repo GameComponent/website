@@ -1,8 +1,14 @@
 <style scoped>
 .header {
-  position: relative;
+  position: absolute;
+  height: 80px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  background-color: transparent;
 }
-
 .header__logo:hover {
   opacity: 0.75;
 }
@@ -26,27 +32,22 @@
 }
 
 .dropdown__content {
-  border-radius: 5px;
   background: white;
   will-change: width, height, transform;
+  text-align: left;
 }
 
-.dropdown__content>ul>li {
-  margin-bottom: 3.3em;
+.dropdown__items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown__item {
+  width: 100%;
 }
 
 @media only screen and (min-width: 1000px) {
-  .header {
-    position: absolute;
-    height: 80px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    padding: 0;
-    text-align: center;
-    background-color: transparent;
-  }
-
   .navigation {
     display: inline-block;
   }
@@ -104,12 +105,6 @@
     opacity: 0;
     -webkit-transition: opacity 0.25s;
     transition: opacity 0.25s;
-  }
-  .header .dropdown__content>ul {
-    position: relative;
-    z-index: 1;
-    height: 100%;
-    width: 100%;
     overflow: hidden;
   }
 
@@ -123,6 +118,15 @@
   .dropdown__content--visible::before {
     opacity: 1;
   }
+
+  .dropdown__items {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
   .dropdown__item {
     position: absolute;
     left: 0;
@@ -130,47 +134,26 @@
     opacity: 0;
     visibility: hidden;
     width: 100%;
+    list-style: none;
     -webkit-transition: opacity 0.25s, visibility 0.25s;
     transition: opacity 0.25s, visibility 0.25s;
   }
+
   .dropdown__item--active {
     opacity: 1;
     visibility: visible;
   }
-  .header .label {
-    display: none;
-  }
-  .header .content {
-    -webkit-transition: -webkit-transform 0.25s;
-    transition: -webkit-transform 0.25s;
-    transition: transform 0.25s;
-    transition: transform 0.25s, -webkit-transform 0.25s;
-    text-align: left;
-  }
-  .header .content>ul::after {
-    clear: both;
-    content: '';
-    display: block;
-  }
-  .header .content>ul>li {
-    width: 48%;
-    float: left;
-    margin-right: 4%;
-    margin-top: 0;
-  }
-  .header .content>ul>li:nth-of-type(2n) {
-    margin-right: 0;
+
+  .dropdown__item--services {
+    width: 360px;
   }
 
-  .header .links .content>ul>li {
-    margin-top: 0;
+  .dropdown__item--developers {
+    width: 360px;
   }
-  .header .links .content, .header .button .content {
-    width: 390px;
-  }
-  .header .links-list a {
-    font-size: 1rem;
-    margin-left: 0;
+
+  .dropdown__item--community {
+    width: 250px;
   }
 }
 </style>
@@ -267,130 +250,109 @@
         @mouseleave.prevent.stop="handleDropdownMouseLeave"
       >
         <div
-          class="dropdown__content"
+          class="dropdown__content rounded"
           :class="{ 'dropdown__content--visible': active !== '' }"
           :style="dropdownContentStyle"
         >
-          <ul>
+          <ul class="dropdown__items">
             <li
               id="services"
-              class="dropdown__item gallery"
+              class="dropdown__item dropdown__item--services"
               :class="{ 'dropdown__item--active': active === 'services' }"
             >
-              <div class="content p-4">
-                <div class="clearfix">
+              <div class="content">
+                <nuxt-link to="/services/economy-service" class="block clearfix p-4 hover:bg-grey-lighter rounded-t">
                   <div class="float-left">
                     <img
-                      src="@/assets/icons/icon-external-link.svg"
+                      src="@/assets/icons/icon-currency-dollar.svg"
                       alt=""
                       class="bg-green-lighter p-3 rounded-full"
                       style="width: 48px; height: 48px"
                     >
                   </div>
-                  <div class="float-left ml-4">
-                    <div class="font-bold">Economy service</div>
-                    <div class="text-xs">Everything related to items, currencies and shops</div>
+                  <div class="float-left ml-4 mt-1">
+                    <div class="font-bold text-black">Economy service</div>
+                    <div class="text-xs text-grey-darker">Everything related to items, currencies and shops</div>
                   </div>
+                </nuxt-link>
+
+                <div class="bg-grey-lightest hover:bg-grey-lighter rounded-b hidden lg:block">
+                  <a href="" class="text-center block p-4 text-grey-darker no-underline">
+                    View all services
+                  </a>
                 </div>
               </div>
             </li>
 
             <li
               id="developers"
-              class="dropdown__item links"
+              class="dropdown__item dropdown__item--developers"
               :class="{ 'dropdown__item--active': active === 'developers' }"
             >
-              <a href="#0" class="label">Pricing</a>
               <div class="content">
-                <ul>
-                  <li>
-                    <h2>Services</h2>
-                    <ul class="links-list">
-                      <li><a href="#0">Logo Design</a></li>
-                      <li><a href="#0">Branding</a></li>
-                      <li><a href="#0">Web Design</a></li>
-                      <li><a href="#0">iOS</a></li>
-                      <li><a href="#0">Android</a></li>
-                      <li><a href="#0">HTML/CSS/JS</a></li>
-                      <li><a href="#0">Packaging</a></li>
-                      <li><a href="#0">Mobile</a></li>
-                      <li><a href="#0">UI/UX</a></li>
-                      <li><a href="#0">Prototyping</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <h2>Projects</h2>
-                    <ul class="links-list">
-                      <li><a href="#0">Logo Design</a></li>
-                      <li><a href="#0">Branding</a></li>
-                      <li><a href="#0">Web Design</a></li>
-                      <li><a href="#0">iOS</a></li>
-                      <li><a href="#0">Android</a></li>
-                      <li><a href="#0">HTML/CSS/JS</a></li>
-                    </ul>
-                  </li>
-                </ul>
+                <nuxt-link to="/services/economy-service" class="block clearfix p-4 hover:bg-grey-lighter rounded-t">
+                  <div class="float-left">
+                    <img
+                      src="@/assets/icons/icon-information.svg"
+                      alt=""
+                      class="bg-blue-lighter p-3 rounded-full"
+                      style="width: 48px; height: 48px"
+                    >
+                  </div>
+                  <div class="float-left ml-4 mt-1">
+                    <div class="font-bold text-black">Documentation</div>
+                    <div class="text-xs text-grey-darker">Specifications, documentation and examples</div>
+                  </div>
+                </nuxt-link>
+
+                <div class="bg-grey-lightest hover:bg-grey-lighter hidden lg:block">
+                  <a
+                    href=""
+                    class="block p-4 text-grey-darker no-underline"
+                    style="padding-left: calc(2rem + 48px);"
+                  >
+                    GRPC API Specification
+                  </a>
+                </div>
+
+                <div class="bg-grey-lightest hover:bg-grey-lighter rounded-b hidden lg:block">
+                  <a
+                    href=""
+                    class="block p-4 text-grey-darker no-underline"
+                    style="padding-left: calc(2rem + 48px);"
+                  >
+                    REST API Specification
+                  </a>
+                </div>
               </div>
             </li>
 
             <li
               id="community"
-              class="dropdown__item button"
+              class="dropdown__item dropdown__item--community"
               :class="{ 'dropdown__item--active': active === 'community' }"
             >
-              <a href="#0" class="label">Contact</a>
               <div class="content">
-                <ul class="links-list">
-                  <li><a href="#0">Link #1</a></li>
-                  <li><a href="#0">Link #2</a></li>
-                  <li><a href="#0">Link #3</a></li>
-                  <li><a href="#0">Link #4</a></li>
-                  <li><a href="#0">Link #5</a></li>
-                  <li><a href="#0">Link #6</a></li>
-                  <li><a href="#0">Link #1</a></li>
-                  <li><a href="#0">Link #2</a></li>
-                  <li><a href="#0">Link #3</a></li>
-                  <li><a href="#0">Link #4</a></li>
-                  <li><a href="#0">Link #5</a></li>
-                  <li><a href="#0">Link #6</a></li>
-                  <li><a href="#0">Link #1</a></li>
-                  <li><a href="#0">Link #2</a></li>
-                  <li><a href="#0">Link #3</a></li>
-                  <li><a href="#0">Link #4</a></li>
-                  <li><a href="#0">Link #5</a></li>
-                  <li><a href="#0">Link #6</a></li>
-                  <li><a href="#0">Link #1</a></li>
-                  <li><a href="#0">Link #2</a></li>
-                  <li><a href="#0">Link #3</a></li>
-                  <li><a href="#0">Link #4</a></li>
-                  <li><a href="#0">Link #5</a></li>
-                  <li><a href="#0">Link #6</a></li>
-                  <li><a href="#0">Link #1</a></li>
-                  <li><a href="#0">Link #2</a></li>
-                  <li><a href="#0">Link #3</a></li>
-                  <li><a href="#0">Link #4</a></li>
-                  <li><a href="#0">Link #5</a></li>
-                  <li><a href="#0">Link #6</a></li>
-                  <li><a href="#0">Link #1</a></li>
-                  <li><a href="#0">Link #2</a></li>
-                  <li><a href="#0">Link #3</a></li>
-                  <li><a href="#0">Link #4</a></li>
-                  <li><a href="#0">Link #5</a></li>
-                  <li><a href="#0">Link #6</a></li>
-                  <li><a href="#0">Link #1</a></li>
-                  <li><a href="#0">Link #2</a></li>
-                  <li><a href="#0">Link #3</a></li>
-                  <li><a href="#0">Link #4</a></li>
-                  <li><a href="#0">Link #5</a></li>
-                  <li><a href="#0">Link #6</a></li>
-                  <li><a href="#0">Link #1</a></li>
-                  <li><a href="#0">Link #2</a></li>
-                  <li><a href="#0">Link #3</a></li>
-                  <li><a href="#0">Link #4</a></li>
-                  <li><a href="#0">Link #5</a></li>
-                  <li><a href="#0">Link #6</a></li>
-                </ul>
-                <a href="#0">Get in Touch</a>
+                <div class="hover:bg-grey-lighter rounded-t">
+                  <a href="" class="block p-4 text-grey-darker no-underline">
+                    <img src="@/assets/social_icons/discord_dark.svg" alt="github" class="align-bottom w-6 h-6" />
+                    <span class="leading-normal ml-4">Discord</span>
+                  </a>
+                </div>
+
+                <div class="hover:bg-grey-lighter rounded-b">
+                  <a href="" class="block p-4 text-grey-darker no-underline">
+                    <img src="@/assets/social_icons/twitter_dark.svg" alt="github" class="align-bottom w-6 h-6" />
+                    <span class="leading-normal ml-4">Twitter</span>
+                  </a>
+                </div>
+
+                <div class="bg-grey-lightest hover:bg-grey-lighter rounded-b">
+                  <a href="" class="block p-4 text-grey-darker no-underline">
+                    <img src="@/assets/social_icons/github_dark.svg" alt="github" class="align-bottom w-6 h-6" />
+                    <span class="leading-normal ml-4">Become a contributer</span>
+                  </a>
+                </div>
               </div>
             </li>
           </ul>
@@ -421,31 +383,35 @@ export default class Navigation extends Vue {
   dropdownContentStyle: Object = {
     width: '',
     height: '',
-    transform: 'translateX(100%)',
+    transform: '',
   };
 
-  handleMouseLeaveHeader() {
+  public mounted() {
+
+  }
+
+  public handleMouseLeaveHeader() {
     console.log('handleMouseLeaveHeader');
     this.hideDropdown();
   }
 
-  handleMouseEnterItem(e) {
+  public handleMouseEnterItem(e) {
     console.log('handleMouseEnterItem');
     this.showDropdown(e.target);
   }
 
-  handleMouseLeaveItem(e) {
+  public handleMouseLeaveItem(e) {
     console.log('handleMouseLeaveItem', e);
     if (this.active === '') {
       this.hideDropdown();
     }
   }
 
-  handleDropdownMouseLeave() {
+  public handleDropdownMouseLeave() {
     console.log('handleDropdownMouseLeave');
   }
 
-  handleDropdownMouseEnter() {
+  public handleDropdownMouseEnter() {
     console.log('handleDropdownMouseEnter');
   }
 

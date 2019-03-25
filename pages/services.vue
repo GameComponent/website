@@ -7,7 +7,7 @@
 <template>
   <div>
     <section class="background--grid">
-      <div class="container mx-auto pt-16 pb-32 px-8">
+      <div class="container mx-auto py-32 px-8">
         <div class="w-1/2">
           <h1 class="text-black text-5xl w-128" style="letter-spacing: 0.5px;">
             Services
