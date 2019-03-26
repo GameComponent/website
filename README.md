@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/389daed3-a36e-40a3-b294-2c2a3f575b21/deploy-status)](https://app.netlify.com/sites/gamecomponent/deploys)
+
 # website
 
 > GameComponent website
