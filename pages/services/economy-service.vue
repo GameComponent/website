@@ -1,4 +1,8 @@
 <style scoped>
+  .background--light-green {
+    background-image: linear-gradient(90deg, #eef5eb, #cbfdcb)
+  }
+
   .container--first {
     margin-top: -4rem;
   }
@@ -6,15 +10,23 @@
 
 <template>
   <div>
-    <section class="background--grid">
-      <div class="container mx-auto py-32 px-8">
-        <div class="w-1/2">
+    <section class="background--light-green">
+      <div class="container mx-auto py-32 px-8 clearfix">
+        <div class="w-1/2 float-left">
           <h1 class="text-black text-5xl w-128" style="letter-spacing: 0.5px;">
-            Services
+            Economy service
           </h1>
           <p class="text-grey-darker mt-4 text-xl leading-normal">
-            Learn about the variety of services that you can use to power your game.
+            Do you need items, virtual currencies and shops?<br>
+            This service is for you.
           </p>
+        </div>
+        <div class="w-1/2 float-left flex justify-center items-center">
+          <img
+            src="~assets/img/town.png"
+            alt=""
+            class="h-64"
+          >
         </div>
       </div>
     </section>
@@ -29,7 +41,7 @@
             &rarr;
           </span>
           <span style="letter-spacing: 0.5px;">
-            HOME
+            ECONOMY-SERVICE
           </span>
         </div>
 
@@ -126,10 +138,10 @@
 import { Component, Vue } from "nuxt-property-decorator"
 
 @Component
-export default class Services extends Vue {
+export default class EconomyService extends Vue {
   public head () {
     return {
-      title: 'GameComponent - Services'
+      title: 'GameComponent - Economy service'
     };
   }
 }

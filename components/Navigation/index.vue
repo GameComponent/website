@@ -8,6 +8,7 @@
   padding: 0;
   text-align: center;
   background-color: transparent;
+  z-index: 1;
 }
 .header__logo:hover {
   opacity: 0.75;
@@ -277,7 +278,7 @@
                 </nuxt-link>
 
                 <div class="bg-grey-lightest hover:bg-grey-lighter rounded-b hidden lg:block">
-                  <a href="" class="text-center block p-4 text-grey-darker no-underline">
+                  <a href="/services" class="text-center block p-4 text-grey-darker no-underline">
                     View all services
                   </a>
                 </div>
@@ -290,7 +291,7 @@
               :class="{ 'dropdown__item--active': active === 'developers' }"
             >
               <div class="content">
-                <nuxt-link to="/services/economy-service" class="block clearfix p-4 hover:bg-grey-lighter rounded-t">
+                <nuxt-link to="/developers/economy-service/documentation" class="block clearfix p-4 hover:bg-grey-lighter rounded-t">
                   <div class="float-left">
                     <img
                       src="@/assets/icons/icon-information.svg"
@@ -307,21 +308,23 @@
 
                 <div class="bg-grey-lightest hover:bg-grey-lighter hidden lg:block">
                   <a
-                    href=""
+                    href="https://github.com/GameComponent/economy-service/blob/master/api/proto/v1/economy-service.proto"
+                    target="_blank"
                     class="block p-4 text-grey-darker no-underline"
                     style="padding-left: calc(2rem + 48px);"
                   >
-                    GRPC API Specification
+                    GRPC API Specification &#x1F5D7;
                   </a>
                 </div>
 
                 <div class="bg-grey-lightest hover:bg-grey-lighter rounded-b hidden lg:block">
                   <a
-                    href=""
+                    href="https://generator.swagger.io/?url=https://raw.githubusercontent.com/GameComponent/economy-service/master/api/swagger/v1/economy-service.swagger.json"
+                    target="_blank"
                     class="block p-4 text-grey-darker no-underline"
                     style="padding-left: calc(2rem + 48px);"
                   >
-                    REST API Specification
+                    REST API Specification &#x1F5D7;
                   </a>
                 </div>
               </div>
@@ -334,23 +337,30 @@
             >
               <div class="content">
                 <div class="hover:bg-grey-lighter rounded-t">
-                  <a href="" class="block p-4 text-grey-darker no-underline">
+                  <nuxt-link to="/community" class="block p-4 text-grey-darker no-underline">
+                    <img src="@/assets/icons/icon-group.svg" alt="" class="align-bottom w-6 h-6" />
+                    <span class="leading-normal ml-4">View all channels</span>
+                  </nuxt-link>
+                </div>
+
+                <div class="bg-grey-lightest hover:bg-grey-lighter rounded-t">
+                  <a href="https://discord.gg/CPmb5N5" target="_blank" class="block p-4 text-grey-darker no-underline">
                     <img src="@/assets/social_icons/discord_dark.svg" alt="github" class="align-bottom w-6 h-6" />
-                    <span class="leading-normal ml-4">Discord</span>
+                    <span class="leading-normal ml-4">Discord &#x1F5D7;</span>
                   </a>
                 </div>
 
-                <div class="hover:bg-grey-lighter rounded-b">
-                  <a href="" class="block p-4 text-grey-darker no-underline">
+                <div class="bg-grey-lightest hover:bg-grey-lighter">
+                  <a href="https://twitter.com/GameComponentHQ" class="block p-4 text-grey-darker no-underline">
                     <img src="@/assets/social_icons/twitter_dark.svg" alt="github" class="align-bottom w-6 h-6" />
-                    <span class="leading-normal ml-4">Twitter</span>
+                    <span class="leading-normal ml-4">Twitter &#x1F5D7;</span>
                   </a>
                 </div>
 
                 <div class="bg-grey-lightest hover:bg-grey-lighter rounded-b">
-                  <a href="" class="block p-4 text-grey-darker no-underline">
+                  <a href="https://github.com/GameComponent/economy-service" class="block p-4 text-grey-darker no-underline">
                     <img src="@/assets/social_icons/github_dark.svg" alt="github" class="align-bottom w-6 h-6" />
-                    <span class="leading-normal ml-4">Become a contributer</span>
+                    <span class="leading-normal ml-4">Become a contributer &#x1F5D7;</span>
                   </a>
                 </div>
               </div>

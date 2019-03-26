@@ -1,4 +1,16 @@
 <style scoped>
+  .background--light-blue {
+    background-image: linear-gradient(-90deg, #b3f1ff, #cff5fe);
+  }
+
+  .background--clouds {
+    background-image: url('~assets/img/bg_clouds.svg');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 100%;
+    transform: translateY(10px);
+  }
+
   .container--first {
     margin-top: -4rem;
   }
@@ -10,7 +22,8 @@
 
 <template>
   <div>
-    <section class="background--grid">
+    <section class="background--light-blue relative">
+      <div class="background--clouds absolute w-full h-64 pin-l pin-b"></div>
       <div class="container mx-auto clearfix py-32 px-8">
         <div class="w-1/2 float-left">
           <h1 class="text-black text-5xl w-128" style="letter-spacing: 0.5px;">
@@ -21,12 +34,14 @@
           </p>
         </div>
 
-        <div class="w-1/2 float-right relative">
+        <div
+          class="w-1/2 float-left flex items-center justify-center"
+          style="max-height: 12rem;"
+        >
           <img
-            src="~assets/img/aliens_small.png"
+            src="~assets/illustration/parachute.svg"
             alt=""
-            class="absolute pin-r"
-            style="max-width: none;"
+            class="w-64 h-64"
           >
         </div>
       </div>
