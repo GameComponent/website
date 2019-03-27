@@ -106,7 +106,7 @@
               </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/community" class="no-underline text-white hover:text-blue">
+              <nuxt-link to="/jobs" class="no-underline text-white hover:text-blue">
                 Jobs
               </nuxt-link>
             </li>

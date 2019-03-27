@@ -6,16 +6,20 @@
       </span>
 
       <div class="mt-8">
-        <img
-          src="~assets/img/engines/unreal.svg"
-          alt="Unreal"
-          class="w-64 h-32"
-        />
-        <img
-          src="~assets/img/engines/unity.svg"
-          alt="Unity"
-          class="w-64 h-32 ml-8"
-        />
+        <a href="https://www.unrealengine.com">
+          <img
+            src="~assets/img/engines/unreal.svg"
+            alt="Unreal"
+            class="w-64 h-32"
+          />
+        </a>
+        <a href="https://unity.com/">
+          <img
+            src="~assets/img/engines/unity.svg"
+            alt="Unity"
+            class="w-64 h-32 ml-8"
+          />
+        </a>
       </div>
     </div>
   </section>
