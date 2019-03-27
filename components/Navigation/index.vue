@@ -375,7 +375,6 @@
 <script lang="ts">
 import {
   Component,
-  Prop,
   Vue
 } from "nuxt-property-decorator"
 import Hamburger from "./components/Hamburger.vue"
@@ -435,18 +434,18 @@ export default class Navigation extends Vue {
       `#${item.dataset.content}`
     );
     const selectedDropdownHeight = selectedDropdown ? selectedDropdown.clientHeight : 0;
-    const childNodes = selectedDropdown ? selectedDropdown.childNodes : [];
-    const content = Array.from(childNodes)
-      .find((item: Element) => {
-        if (!item) return false;
-        if (!item.classList) return false;
-        return item.classList.contains("content");
-      });
+    const childNodes: any = selectedDropdown ? selectedDropdown.childNodes : [];
+    const elments: any = (selectedDropdown ? [...childNodes] : []);
+
+    const content = elments.find((item) => {
+      if (!item) return false;
+      if (!item.classList) return false;
+      return item.classList.contains("content");
+    });
     const selectedDropdownWidth = content ? (<Element>content).clientWidth : 0;
     const selectedDropdownLeft =
       item.offsetLeft + item.clientWidth / 2 - selectedDropdownWidth / 2;
     this.updateDropdown(
-      selectedDropdown,
       selectedDropdownHeight,
       selectedDropdownWidth,
       selectedDropdownLeft,
@@ -459,7 +458,7 @@ export default class Navigation extends Vue {
     this.active = '';
   }
 
-  public updateDropdown(dropdownItem, height, width, left) {
+  public updateDropdown(height, width, left) {
     this.dropdownContentStyle = {
       width: `${width}px`,
       height: `${height}px`,

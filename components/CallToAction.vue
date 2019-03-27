@@ -1,6 +1,6 @@
 <template>
-  <section>
-    <div class="text-center mx-auto" style="max-width: 400px">
+  <section class="py-16 md:py-32 md:flex md:justify-center md:items-center md:text-center">
+    <div class="container mx-auto px-8">
       <h2 class="text-black text-4xl" style="letter-spacing: 0.5px;">
         Let's get started
       </h2>
@@ -8,20 +8,25 @@
         Be up and running in minutes.
       </p>
       <div class="mt-8">
-        <a
-          href="https://github.com/GameComponent/economy-service"
-          class="inline-block py-4 px-6 rounded-sm bg-blue text-white no-underline font-medium text-sm"
-          style="letter-spacing: 0.3px;"
-        >
-          Install the service
-        </a>
-        <a
-          href="https://github.com/GameComponent/economy-webclient"
-          class="inline-block ml-4 py-4 px-6 rounded-sm bg-grey-darker text-white no-underline font-medium text-sm"
-          style="letter-spacing: 0.3px;"
-        >
-          Install the webclient
-        </a>
+        <div class="md:inline-block">
+          <a
+            href="https://github.com/GameComponent/economy-service"
+            class="inline-block py-4 px-6 rounded-sm bg-blue text-white no-underline font-medium text-sm"
+            style="letter-spacing: 0.3px;"
+          >
+            Install the service
+          </a>
+        </div>
+
+        <div class="mt-2 md:mt-0 md:ml-4 md:inline-block">
+          <a
+            href="https://github.com/GameComponent/economy-webclient"
+            class="inline-block py-4 px-6 rounded-sm bg-grey-darker text-white no-underline font-medium text-sm"
+            style="letter-spacing: 0.3px;"
+          >
+            Install the webclient
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -32,7 +37,6 @@
 <script lang="ts">
 import {
   Component,
-  Prop,
   Vue
 } from "nuxt-property-decorator"
 

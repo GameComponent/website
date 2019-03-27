@@ -1,7 +1,7 @@
 <template>
   <section class="background--grid">
-    <div class="container mx-auto clearfix py-64 px-8">
-      <div class="w-1/2 float-left">
+    <div class="container mx-auto clearfix py-16 lg:py-64 px-8">
+      <div class="w-full float-left lg:w-1/2">
         <h1 class="text-black text-5xl" style="letter-spacing: 0.5px;">
           We provide building blocks for your online game.
         </h1>
@@ -30,7 +30,7 @@
         </div>
       </div>
 
-      <div class="w-1/2 float-right relative">
+      <div class="hidden lg:block w-1/2 float-right relative">
         <img
           src="~assets/img/town.png"
           alt=""
@@ -45,7 +45,6 @@
 <script lang="ts">
 import {
   Component,
-  Prop,
   Vue
 } from "nuxt-property-decorator"
 

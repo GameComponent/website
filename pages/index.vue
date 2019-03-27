@@ -122,9 +122,7 @@
 
     <github />
 
-    <div class="py-32">
-      <call-to-action />
-    </div>
+    <call-to-action />
   </div>
 </template>
 

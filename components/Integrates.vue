@@ -28,7 +28,6 @@
 <script lang="ts">
 import {
   Component,
-  Prop,
   Vue
 } from "nuxt-property-decorator"
 

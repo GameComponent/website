@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-blue-darkest">
-    <div class="container mx-auto p-8 py-32">
+    <div class="container mx-auto p-8 py-16 md:py-32">
       <div>
         <img
           src="@/assets/img/logo-white.svg"
@@ -9,8 +9,8 @@
         />
       </div>
 
-      <div class="flex mt-8">
-        <div class="flex-1">
+      <div class="mt-8 flex flex-col-reverse md:flex-row">
+        <div class="pt-8 md:pt-0 w-full md:w-2/5">
           <div>
             <span class="uppercase text-xs font-bold text-grey-darker leading-normal" style="letter-spacing: 0.5px;">
               SOCIAL MEDIA
@@ -85,7 +85,7 @@
           </div>
         </div>
 
-        <div class="flex-1">
+        <div class="pt-8 md:pt-0 w-full md:w-1/5">
           <span class="uppercase text-xs font-bold text-grey-darker leading-normal" style="letter-spacing: 0.5px;">
             DOCUMENTATION
           </span>
@@ -128,7 +128,7 @@
           </ul>
         </div>
 
-        <div class="flex-1">
+        <div class="pt-8 md:pt-0 w-full md:w-1/5">
           <span class="uppercase text-xs font-bold text-grey-darker leading-normal" style="letter-spacing: 0.5px;">
             SERVICE
           </span>
@@ -145,7 +145,7 @@
           </ul>
         </div>
 
-        <div class="flex-1">
+        <div class="w-full md:w-1/5">
           <span class="uppercase text-xs font-bold text-grey-darker leading-normal" style="letter-spacing: 0.5px;">
             LEGAL
           </span>
@@ -164,7 +164,6 @@
 <script lang="ts">
 import {
   Component,
-  Prop,
   Vue
 } from "nuxt-property-decorator";
 
