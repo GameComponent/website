@@ -17,9 +17,6 @@ import { Component, Vue } from "nuxt-property-decorator"
 import Navigation from "~/components/Navigation/index.vue"
 import Bottom from "~/components/Bottom.vue"
 
-console.log('Bottom', Bottom);
-console.log('Navigation', Navigation);
-
 @Component({
   components: {
     Bottom,
