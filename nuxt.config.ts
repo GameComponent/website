@@ -23,6 +23,7 @@ const config: NuxtConfiguration = {
   },
   modules: [
     "@nuxtjs/axios",
+    "vue-github-buttons/nuxt",
   ],
   axios: {}
 }
