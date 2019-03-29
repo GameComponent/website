@@ -1,14 +1,10 @@
 <style scoped>
-  .background--light-blue {
-    background-image: linear-gradient(-90deg, #b3f1ff, #cff5fe);
-  }
-
   .background--clouds {
-    background-image: url('~assets/img/bg_clouds.svg');
-    background-repeat: no-repeat;
+    background-color: #edf9fd;
+    background-image: url('~assets/img/bg_clouds_repeat.svg');
+    background-repeat: repeat-x;
     background-position: bottom left;
-    background-size: 100%;
-    transform: translateY(10px);
+    background-size: 512px 622px;
   }
 
   .container--first {
@@ -22,8 +18,7 @@
 
 <template>
   <div>
-    <section class="background--light-blue relative">
-      <div class="background--clouds absolute w-full h-64 pin-l pin-b"></div>
+    <section class="background--clouds">
       <div class="container mx-auto clearfix py-32 px-8">
         <div class="w-1/2 float-left">
           <h1 class="text-black text-5xl w-128" style="letter-spacing: 0.5px;">
