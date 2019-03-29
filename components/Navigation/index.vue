@@ -167,7 +167,7 @@
     }"
     @mouseleave="handleMouseLeaveHeader"
   >
-    <div class="container mx-auto px-8 clearfix">
+    <div class="container mx-auto px-8 lg:px-16 clearfix">
       <nuxt-link to="/" class="header__logo float-left">
         <img
           src="@/assets/img/logo.svg"
