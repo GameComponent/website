@@ -1,27 +1,43 @@
 <style scoped>
-.container--octocat {
-  background-image: url('~assets/img/octocat.svg');
-  background-size: 400px;
-  background-repeat: no-repeat;
-  background-position: 100% 50%;
-}
 .container--soft-shadow {
   box-shadow: 0 10px 32px 0 rgba(12,12,13,.05), 0 2px 16px 0 rgba(12,12,13,.01)
 }
 
 .background--dots {
-  /* background-image: url('~assets/img/dots.png');
-  background-color: #d4d5d6;
-  background-repeat: repeat; */
   background-image: url('~assets/img/bg.svg');
   background-color: #d4d5d6;
   background-size: 100%;
 }
+
+.container--octocat {
+  background-image: url('~assets/img/octocat.svg');
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: 90% 70%;
+}
+
+@media (min-width: 992px) {
+  .container--octocat {
+    background-image: url('~assets/img/octocat.svg');
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container--octocat {
+    background-image: url('~assets/img/octocat.svg');
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+  }
+}
 </style>
 
 <template>
-  <section class="background--dots p-32">
-    <div class="relative container container--octocat container--soft-shadow mx-auto p-16 rounded-sm bg-grey-lighter">
+  <section class="background--dots p-4 py-16 md:p-32">
+    <div class="relative container container--octocat container--soft-shadow mx-auto rounded-sm bg-grey-lighter p-4 md:p-16 ">
       <span class="uppercase text-xs font-bold text-grey-darker leading-normal" style="letter-spacing: 0.5px;">
         HELP US
       </span>

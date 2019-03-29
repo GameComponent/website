@@ -1,7 +1,6 @@
 <style scoped>
   .container--first {
     margin-top: -4rem;
-    box-sizing: content-box;
   }
 </style>
 
@@ -11,11 +10,11 @@
 
     <section>
       <div
-        class="container container--first content-box bg-white mx-auto rounded clearfix py-16 px-8 mb-16 h-64 pb-32"
+        class="container container--first bg-white mx-auto rounded clearfix pt-16 px-8"
       >
-        <div class="px-8">
-          <div class="w-2/3 float-left relative">
-            <div class="absolute pin-r pr-16">
+        <div class="lg:px-8">
+          <div class="w-full lg:w-2/3 lg:float-left">
+            <div class="lg:pr-16">
               <img
                 src="~assets/img/economy/screenshot.png"
                 alt=""
@@ -23,7 +22,7 @@
               >
             </div>
           </div>
-          <div class="w-1/3 float-right">
+          <div class="w-full pt-16 lg:pt-0 lg:w-1/3 lg:float-right">
             <div class="uppercase text-xs font-bold text-grey-darker leading-normal mt-4" style="letter-spacing: 0.5px;">
               <div
                 class="w-2 h-2 rounded-full inline-block v-mid"
@@ -45,8 +44,8 @@
     </section>
 
     <section>
-      <div class="container mx-auto px-8 py-32 flex">
-        <div class="w-1/4 p-8">
+      <div class="container mx-auto clearfix px-8 py-16 lg:py-32">
+        <div class="float-left w-full sm:w-1/2 lg:w-1/4 sm:pr-8 lg:p-8">
           <img
             src="@/assets/icons/icon-lock-open.svg"
             alt=""
@@ -63,7 +62,7 @@
           </div>
         </div>
 
-        <div class="w-1/4 p-8">
+        <div class="float-left w-full sm:w-1/2 lg:w-1/4 pt-8 sm:pt-0 sm:pl-8 lg:p-8">
           <img
             src="@/assets/icons/icon-external-link.svg"
             alt=""
@@ -80,7 +79,7 @@
           </div>
         </div>
 
-        <div class="w-1/4 p-8">
+        <div class="float-left w-full sm:w-1/2 lg:w-1/4 pt-8 sm:pr-8 lg:p-8">
           <img
             src="@/assets/icons/icon-puzzle.svg"
             alt=""
@@ -97,7 +96,7 @@
           </div>
         </div>
 
-        <div class="w-1/4 p-8">
+        <div class="float-left w-full sm:w-1/2 lg:w-1/4 pt-8 sm:pl-8 lg:p-8">
           <img
             src="@/assets/icons/icon-heart.svg"
             alt=""
@@ -116,7 +115,7 @@
       </div>
     </section>
 
-    <div class="pb-32">
+    <div class="pb-16 lg:pb-32">
       <integrates />
     </div>
 

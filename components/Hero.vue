@@ -1,8 +1,16 @@
 <template>
-  <section class="background--grid">
-    <div class="container mx-auto clearfix py-16 lg:py-64 px-8">
+  <section class="background--grid overflow-hidden">
+    <div class="relative container mx-auto clearfix py-32 lg:py-64 px-8">
+      <!-- <div class="absolute pin-r w-1 pr-8">
+        <img
+          src="~assets/img/town.png"
+          alt=""
+          class="absolute left-0"
+          style="max-width: none;"
+        >
+      </div> -->
       <div class="w-full float-left lg:w-1/2">
-        <h1 class="text-black text-5xl" style="letter-spacing: 0.5px;">
+        <h1 class="text-black text-4xl md:text-5xl" style="letter-spacing: 0.5px;">
           We provide building blocks for your online game.
         </h1>
 
@@ -13,20 +21,24 @@
         </p>
 
         <div class="mt-8">
-          <a
-            href="https://github.com/GameComponent/economy-service"
-            class="inline-block py-4 px-6 rounded-sm bg-blue text-white no-underline font-medium text-sm"
-            style="letter-spacing: 0.3px;"
-          >
-            Install the service
-          </a>
-          <a
-            href="https://github.com/GameComponent/economy-webclient"
-            class="inline-block ml-4 py-4 px-6 rounded-sm bg-grey-darker text-white no-underline font-medium text-sm"
-            style="letter-spacing: 0.3px;"
-          >
-            Explore features
-          </a>
+          <div class="md:inline-block">
+            <a
+              href="https://github.com/GameComponent/economy-service"
+              class="inline-block py-4 px-6 rounded-sm bg-blue text-white no-underline font-medium text-sm"
+              style="letter-spacing: 0.3px;"
+            >
+              Install the service
+            </a>
+          </div>
+          <div class="mt-2 md:mt-0 md:inline-block md:ml-4">
+            <a
+              href="https://github.com/GameComponent/economy-webclient"
+              class="inline-block py-4 px-6 rounded-sm bg-grey-darker text-white no-underline font-medium text-sm"
+              style="letter-spacing: 0.3px;"
+            >
+              Explore features
+            </a>
+          </div>
         </div>
       </div>
 
