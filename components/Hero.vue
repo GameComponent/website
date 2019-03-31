@@ -1,14 +1,6 @@
 <template>
   <section class="background--grid overflow-hidden">
     <div class="relative container mx-auto clearfix py-32 lg:py-64 px-8 lg:px-16">
-      <!-- <div class="absolute pin-r w-1 pr-8">
-        <img
-          src="~assets/img/town.png"
-          alt=""
-          class="absolute left-0"
-          style="max-width: none;"
-        >
-      </div> -->
       <div class="w-full float-left lg:w-1/2">
         <h1 class="text-black text-4xl md:text-5xl" style="letter-spacing: 0.5px;">
           We provide building blocks for your online game.

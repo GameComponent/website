@@ -6,13 +6,21 @@
   .container--first {
     margin-top: -4rem;
   }
+
 </style>
 
 <template>
   <div>
     <section class="background--light-green">
-      <div class="container mx-auto py-32 px-8 clearfix">
-        <div class="w-1/2 float-left">
+      <div class="container mx-auto py-32 px-16 clearfix">
+        <div class="w-full md:w-1/2 md:float-right md:flex md:justify-center md:items-center">
+          <img
+            src="~assets/illustration/data_center.svg"
+            alt=""
+            class="w-64 h-64"
+          >
+        </div>
+        <div class="md:w-1/2 md:float-left">
           <h1 class="text-black text-5xl w-128" style="letter-spacing: 0.5px;">
             Services
           </h1>
@@ -20,13 +28,7 @@
             Learn about the variety of services that you can use to power your game.
           </p>
         </div>
-        <div class="w-1/2 float-left flex justify-center items-center">
-          <img
-            src="~assets/illustration/data_center.svg"
-            alt=""
-            class="w-64 h-64"
-          >
-        </div>
+
       </div>
     </section>
 

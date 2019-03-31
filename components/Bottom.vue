@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-blue-darkest">
-    <div class="container mx-auto p-8 py-16 md:py-32">
+    <div class="container mx-auto p-8 py-16 md:p-16 md:py-32">
       <div>
         <img
           src="@/assets/img/logo-white.svg"

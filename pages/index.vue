@@ -1,6 +1,12 @@
 <style scoped>
   .container--first {
-    margin-top: -4rem;
+    margin-top: -2rem;
+  }
+
+  @media(min-width: 992px) {
+    .container--first {
+      margin-top: -4rem;
+    }
   }
 </style>
 

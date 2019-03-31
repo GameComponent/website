@@ -15,21 +15,21 @@
 <template>
   <div>
     <section class="background--light-blue">
-      <div class="container mx-auto py-32 px-8 clearfix">
-        <div class="w-1/2 float-left">
+      <div class="container mx-auto py-32 px-16 clearfix">
+        <div class="w-full md:w-1/2 md:float-right md:flex md:justify-center md:items-center">
+          <img
+            src="~assets/illustration/mind_map.svg"
+            alt=""
+            class="w-64 h-64"
+          >
+        </div>
+        <div class="w-full md:w-1/2 md:float-left">
           <h1 class="text-black text-5xl w-128" style="letter-spacing: 0.5px;">
             Developers
           </h1>
           <p class="text-grey-darker mt-4 text-xl leading-normal">
             Here you can find documentation, technical specifications and examples.
           </p>
-        </div>
-        <div class="w-1/2 float-right flex justify-center items-center">
-          <img
-            src="~assets/illustration/mind_map.svg"
-            alt=""
-            class="w-64 h-64"
-          >
         </div>
       </div>
     </section>
@@ -49,7 +49,7 @@
           </span>
         </div>
 
-        <div class="py-16 px-8">
+        <div class="pt-16 px-8">
           <div class="pb-16">
             <div class="uppercase text-xs font-bold text-grey-darker leading-normal" style="letter-spacing: 0.5px;">
               <div
@@ -68,11 +68,11 @@
             </p>
           </div>
 
-          <div class="flex">
+          <div class="md:flex">
             <!-- REST -->
-            <div class="w-1/3 border border-grey rounded-sm button--shadow">
+            <div class="w-full md:w-1/2 lg:w-1/3 border border-grey rounded-sm button--shadow">
               <div class="p-16">
-                <h2 class="text-black text-4xl leading-tight mt-4">
+                <h2 class="text-black text-4xl leading-tight md:mt-4">
                   REST API
                 </h2>
                 <p class="text-grey-darker leading-normal mt-4">
@@ -91,10 +91,10 @@
             </div>
 
             <!-- GRPC -->
-            <div class="w-1/3 border border-grey rounded-sm button--shadow mx-8">
+            <div class="w-full md:w-1/2 lg:w-1/3 border border-grey rounded-sm button--shadow mt-8 md:mt-0 md:mx-8">
               <div class="p-16">
 
-                <h2 class="text-black text-4xl leading-tight mt-4">
+                <h2 class="text-black text-4xl leading-tight md:mt-4">
                   GRPC API
                 </h2>
                 <p class="text-grey-darker leading-normal mt-4">
@@ -112,18 +112,18 @@
               </div>
             </div>
 
-            <div class="w-1/3 flex justify-center items-center"></div>
+            <div class="lg:w-1/3 flex justify-center items-center"></div>
           </div>
         </div>
 
-        <div class="pt-16 pb-32">
+        <div class="py-16 md:pb-32">
           <div class="px-8">
             <div class="uppercase text-xs font-bold text-grey-darker leading-normal mt-4" style="letter-spacing: 0.5px;">
               QUICK LINKS
             </div>
 
-            <div class="mt-2 flex">
-              <div class="w-1/3 flex justify-center items-center border border-grey rounded-sm button--shadow">
+            <div class="mt-2 md:flex">
+              <div class="w-full md:w-1/3 flex justify-center items-center border border-grey rounded-sm button--shadow">
                 <div class="py-6 text-grey-darkest font-bold text-xl">
                   <img
                     src="@/assets/icons/icon-news.svg"
@@ -134,7 +134,7 @@
                 </div>
               </div>
 
-              <div class="w-1/3 flex justify-center items-center border border-grey rounded-sm button--shadow mx-8 ">
+              <div class="w-full md:w-1/3 flex justify-center items-center border border-grey rounded-sm button--shadow mt-8 md:mt-0 md:mx-8">
                 <div class="py-6 text-grey-darkest font-bold text-xl">
                   <img
                     src="@/assets/icons/icon-group.svg"
@@ -145,7 +145,7 @@
                 </div>
               </div>
 
-              <div class="w-1/3 flex justify-center items-center border border-grey rounded-sm button--shadow">
+              <div class="w-full md:w-1/3 flex justify-center items-center border border-grey rounded-sm button--shadow mt-8 md:mt-0 ">
                   <a
                     href="https://www.youtube.com/channel/UC6dsYX3e2yAX5uM3UaOGnEQ"
                     class="py-6 w-full text-center no-underline text-grey-darkest font-bold text-xl hover:bg-grey-lighter"

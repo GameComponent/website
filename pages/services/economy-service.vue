@@ -11,8 +11,15 @@
 <template>
   <div>
     <section class="background--light-green">
-      <div class="container mx-auto py-32 px-8 clearfix">
-        <div class="w-1/2 float-left">
+      <div class="container mx-auto py-32 px-16 clearfix">
+        <div class="w-full md:w-1/2 md:float-right md:flex md:justify-center md:items-center">
+          <img
+            src="~assets/img/town.png"
+            alt=""
+            style="max-height: 16rem;"
+          >
+        </div>
+        <div class="w-full md:w-1/2 md:float-left">
           <h1 class="text-black text-5xl w-128" style="letter-spacing: 0.5px;">
             Economy service
           </h1>
@@ -21,13 +28,7 @@
             This service is for you.
           </p>
         </div>
-        <div class="w-1/2 float-left flex justify-center items-center">
-          <img
-            src="~assets/img/town.png"
-            alt=""
-            class="h-64"
-          >
-        </div>
+
       </div>
     </section>
 
@@ -86,9 +87,9 @@
       </div>
     </section>
 
-    <section class="flex h-128">
-      <div class="w-1/2 flex justify-center items-center bg-grey-lighter">
-        <div>
+    <section class="md:flex">
+      <div class="w-full md:w-1/2 flex justify-center items-center bg-grey-lighter">
+        <div class="px-8 py-16 lg:py-32">
           <span class="uppercase text-xs font-bold text-grey-darker leading-normal" style="letter-spacing: 0.5px;">
             BACKEND
           </span>
@@ -109,8 +110,8 @@
         </div>
       </div>
 
-      <div class="w-1/2 flex justify-center items-center bg-green-lighter">
-        <div>
+      <div class="w-full md:w-1/2 flex justify-center items-center bg-green-lighter">
+        <div class="px-8 py-16 lg:py-32">
           <span class="uppercase text-xs font-bold text-grey-darker leading-normal" style="letter-spacing: 0.5px;">
             FRONTEND
           </span>

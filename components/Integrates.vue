@@ -11,7 +11,7 @@
             <img
               src="~assets/img/engines/unreal.svg"
               alt="Unreal"
-              class="w-64 h-32"
+              class="w-32 h-16 md:w-64 md:h-32"
             />
           </a>
         </div>
@@ -20,7 +20,7 @@
             <img
               src="~assets/img/engines/unity.svg"
               alt="Unity"
-              class="w-64 h-32"
+              class="w-32 h-16 md:w-64 md:h-32"
             />
           </a>
         </div>
