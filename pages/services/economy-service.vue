@@ -53,31 +53,31 @@
           <h2 class="text-black text-4xl leading-tight">
             The economy service
           </h2>
-          <p class="text-grey-darker leading-normal mt-6">
+          <p class="text-grey-darker leading-roomy mt-6">
             If there is one thing that every game shares, it is an economy.
             Whether you are making a MMORPG, FPS or a crafting game.
             Every game has items or currencies in some sort of form.
           </p>
-          <p class="text-grey-darker leading-normal mt-4">
+          <p class="text-grey-darker leading-roomy mt-6">
             We decided to put our initial focus on providing the best possible economy service you can imagine.
             Simply because it is such a fundemental service that every game needs.
           </p>
-          <p class="text-grey-darker leading-normal mt-4">
+          <p class="text-grey-darker leading-roomy mt-6">
             We try to differenciete this service from the compitition.
             First by not tying users to a specific platform.
             Secondly we want game developers to be able to edit the source code of the service in case it does not cover all the needed features.
           </p>
-          <p class="text-grey-darker leading-normal mt-4">
+          <p class="text-grey-darker leading-roomy mt-6">
             We split the economy service build in two parts, the service itself and the webclient(ui).
             The service it build on top of GRPC which allows it to communicate with nearly every programming language.
             So no matter what language you use you can easily integrate it with your backend.
           </p>
-          <p class="text-grey-darker leading-normal mt-4">
+          <p class="text-grey-darker leading-roomy mt-6">
             The webclient allows for some proper monitoring of the game's economy.
             With the build-in role system you can allow game designers to easily create ingame items.
             While your devops personel can monitor the economy.
           </p>
-          <p class="text-grey-darker leading-normal mt-4">
+          <p class="text-grey-darker leading-roomy mt-6">
             Our vision is to partner up with some game studios and/or indies.
             So the game developers can focus on creating their game and we can focus on creating awesome tools.
             And to eventually bring this economy service to a stable release.

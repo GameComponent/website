@@ -22,7 +22,7 @@
             Jobs
           </h1>
           <p class="text-grey-darker mt-4 text-xl leading-normal">
-            Currently we do not offer any paid position. However we are looking for partner ships with studios, indies or hobbiest.
+            Currently we do not offer any paid positions. However we are looking for partnerships with studios, indies or hobbiest.
           </p>
         </div>
       </div>
@@ -40,10 +40,10 @@
           <h2 class="text-black text-4xl leading-tight">
             How we work
           </h2>
-          <p class="text-grey-darker leading-loose mt-6">
+          <p class="text-grey-darker leading-roomy mt-6">
             All our work is done completely in the open. We current do not own any private repositories.
             The services code is <nuxt-link to="/license" class="no-underline text-blue">licensed under the SSPLv2 license</nuxt-link>.
-            To see what technoglogies we use just checkout our <a class="no-underline text-blue" href="http://github.com/GameComponent">Github repository</a>.
+            To see what technoglogies we use just checkout our <a class="no-underline text-blue" href="http://github.com/GameComponent" target="_blank">Github repository &#x1F5D7;</a>.
           </p>
         </div>
       </div>
@@ -66,16 +66,16 @@
           <h2 class="text-black text-4xl leading-tight">
             We are looking for partnerships
           </h2>
-          <p class="text-grey-darker leading-loose mt-6">
+          <p class="text-grey-darker leading-roomy mt-6">
             Currently we are in early stages of development. In this stage we are looking for partnerships with studios, indies or hobbiest.
             By partnering up with us we will help you implement the economy service and improve it to fit your use cases.
             This creates a win-win situation where we can improve the economy service and you get everything related to that service in your game.
             Read more about it in our <nuxt-link to="/roadmap" class="no-underline text-blue">roadmap</nuxt-link>.
           </p>
-          <div class="uppercase text-xs font-bold text-grey-darker leading-loose mt-8" style="letter-spacing: 0.5px;">
+          <div class="uppercase text-xs font-bold text-grey-darker leading-roomy mt-8" style="letter-spacing: 0.5px;">
             FUTURE PROOF OUT OF THE BOX
           </div>
-          <p class="text-grey-darker leading-loose mt-2">
+          <p class="text-grey-darker leading-roomy mt-2">
             Once the new versions of the service are released it should be straight forward to update and implement those new features for your game.
           </p>
         </div>
