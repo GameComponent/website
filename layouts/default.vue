@@ -1,9 +1,3 @@
-<style>
-.background--grid {
-  background-image: url('~assets/img/grid_large_light.png');
-}
-</style>
-
 <template>
   <div class="font-sans">
     <navigation />

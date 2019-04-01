@@ -40,10 +40,18 @@
               Economy service
             </h2>
             <p class="text-grey-darker mt-8 text-xl leading-normal" style="letter-spacing: 0.5px;">
-              Do not reinvent the wheel.
-              We provide software services that power parts of your game.
-              Use our economy service to create shops, items and currencies.
+              Use the economy service to create shops, items and currencies.
+              Or to do complicated things like crafting and trading.
             </p>
+            <div class="mt-8">
+              <a
+                href="https://github.com/GameComponent/economy-service"
+                class="inline-block py-4 px-6 rounded-sm bg-green text-white no-underline font-medium text-sm"
+                style="letter-spacing: 0.3px;"
+              >
+                Read more
+              </a>
+            </div>
           </div>
         </div>
       </div>

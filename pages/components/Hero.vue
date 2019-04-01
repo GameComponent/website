@@ -1,3 +1,10 @@
+<style scoped>
+.background--grid {
+  background-image: url('~assets/img/grid_large_light.png');
+  background-color: #d4d5d6;
+}
+</style>
+
 <template>
   <section class="background--grid overflow-hidden">
     <div class="relative container mx-auto clearfix py-32 lg:py-64 px-8 lg:px-16">
@@ -9,20 +16,20 @@
         <p class="text-grey-darker mt-8 text-xl leading-normal" style="letter-spacing: 0.5px;">
           Do not reinvent the wheel.
           We provide software services that power parts of your game.
-          Use our economy service to create shops, items and currencies.
+          Use the economy service to create shops, items and currencies.
         </p>
 
         <div class="mt-8">
           <div class="md:inline-block">
             <a
-              href="https://github.com/GameComponent/economy-service"
+              href="/services"
               class="inline-block py-4 px-6 rounded-sm bg-blue text-white no-underline font-medium text-sm"
               style="letter-spacing: 0.3px;"
             >
-              Install the service
+              Checkout the services
             </a>
           </div>
-          <div class="mt-2 md:mt-0 md:inline-block md:ml-4">
+          <!-- <div class="mt-2 md:mt-0 md:inline-block md:ml-4">
             <a
               href="https://github.com/GameComponent/economy-webclient"
               class="inline-block py-4 px-6 rounded-sm bg-grey-darker text-white no-underline font-medium text-sm"
@@ -30,7 +37,7 @@
             >
               Explore features
             </a>
-          </div>
+          </div> -->
         </div>
       </div>
 
