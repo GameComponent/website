@@ -101,11 +101,6 @@
               </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/developers/webinars" class="no-underline text-white hover:text-blue">
-                Webinars
-              </nuxt-link>
-            </li>
-            <li>
               <nuxt-link to="/jobs" class="no-underline text-white hover:text-blue">
                 Jobs
               </nuxt-link>
@@ -113,11 +108,6 @@
             <li>
               <nuxt-link to="/partners" class="no-underline text-white hover:text-blue">
                 Partners
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/enterprise" class="no-underline text-white hover:text-blue">
-                Enterprise
               </nuxt-link>
             </li>
             <li>
@@ -137,23 +127,22 @@
               Economy service
             </li>
             <li>
-              Pricing
+              Roadmap
             </li>
             <li>
-              Hosted
+              Other services
             </li>
           </ul>
         </div>
 
         <div class="w-full md:w-1/5">
           <span class="uppercase text-xs font-bold text-grey-darker leading-normal" style="letter-spacing: 0.5px;">
-            LEGAL
+            Other
           </span>
 
           <ul class="list-reset text-white leading-normal mt-2">
-            <li>Terms of serivce</li>
-            <li>Privacy</li>
-            <li>GDPR</li>
+            <li>About</li>
+            <li>License</li>
           </ul>
         </div>
       </div>
