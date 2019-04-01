@@ -124,13 +124,14 @@
           </span>
           <ul class="list-reset text-white leading-normal mt-2">
             <li>
-              Economy service
+              <nuxt-link to="/services/economy-service" class="no-underline text-white hover:text-blue">
+                Economy service
+              </nuxt-link>
             </li>
             <li>
-              Roadmap
-            </li>
-            <li>
-              Other services
+              <nuxt-link to="/services" class="no-underline text-white hover:text-blue">
+                Other services
+              </nuxt-link>
             </li>
           </ul>
         </div>
@@ -141,8 +142,21 @@
           </span>
 
           <ul class="list-reset text-white leading-normal mt-2">
-            <li>About</li>
-            <li>License</li>
+            <li>
+              <nuxt-link to="/about" class="no-underline text-white hover:text-blue">
+                About
+              </nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/roadmap" class="no-underline text-white hover:text-blue">
+                Roadmap
+              </nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/roadmap" class="no-underline text-white hover:text-blue">
+                License
+              </nuxt-link>
+            </li>
           </ul>
         </div>
       </div>
