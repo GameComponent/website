@@ -133,10 +133,10 @@
 
 <script lang="ts">
 import { Component, Vue } from "nuxt-property-decorator"
-import Hero from "~/components/Hero.vue"
-import Integrates from "~/components/Integrates.vue"
-import Github from "~/components/Github.vue"
-import CallToAction from "~/components/CallToAction.vue"
+import Hero from "./components/Hero.vue"
+import Integrates from "./components/Integrates.vue"
+import Github from "./components/Github.vue"
+import CallToAction from "./components/CallToAction.vue"
 
 @Component({
   components: {
