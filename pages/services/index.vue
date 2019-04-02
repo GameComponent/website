@@ -12,7 +12,7 @@
 <template>
   <div>
     <section class="background--light-green">
-      <div class="container mx-auto py-32 px-16 clearfix">
+      <div class="container mx-auto py-32 px-8 lg:px-16 clearfix">
         <div class="w-full md:w-1/2 md:float-right md:flex md:justify-center md:items-center">
           <img
             src="~assets/illustration/data_center.svg"
@@ -36,9 +36,9 @@
       <div
         class="container container--first content-box bg-white mx-auto rounded py-16 px-8 mb-16 pb-32"
       >
-        <div class="px-8 clearfix">
-          <div class="w-2/3 float-left relative">
-            <div class="absolute pin-r pr-16">
+        <div class="lg:px-8 clearfix">
+          <div class="w-full md:w-2/3 md:float-left md:relative">
+            <div class="md:absolute md:pin-r md:pr-16">
               <img
                 src="~assets/img/economy/screenshot.png"
                 alt=""
@@ -46,7 +46,7 @@
               >
             </div>
           </div>
-          <div class="w-1/3 float-right">
+          <div class="w-full mt-8 md:mt-0 md:w-1/3 md:float-right">
             <div class="uppercase text-xs font-bold text-grey-darker leading-normal mt-4" style="letter-spacing: 0.5px;">
               <div
                 class="w-2 h-2 rounded-full inline-block v-mid"
