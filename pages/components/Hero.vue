@@ -23,7 +23,7 @@
           <div class="md:inline-block">
             <a
               href="/services"
-              class="inline-block py-4 px-6 rounded-sm bg-blue text-white no-underline font-medium text-sm"
+              class="inline-block py-4 px-6 rounded-sm bg-blue text-white no-underline font-medium text-sm hover:bg-blue-light"
               style="letter-spacing: 0.3px;"
             >
               Checkout the services

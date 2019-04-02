@@ -11,7 +11,7 @@
         <div class="md:inline-block">
           <a
             href="https://github.com/GameComponent/economy-service"
-            class="inline-block py-4 px-6 rounded-sm bg-blue text-white no-underline font-medium text-sm"
+            class="inline-block py-4 px-6 rounded-sm bg-blue text-white no-underline font-medium text-sm hover:bg-blue-light"
             style="letter-spacing: 0.3px;"
           >
             Install the service
@@ -21,7 +21,7 @@
         <div class="mt-2 md:mt-0 md:ml-4 md:inline-block">
           <a
             href="https://github.com/GameComponent/economy-webclient"
-            class="inline-block py-4 px-6 rounded-sm bg-grey-darker text-white no-underline font-medium text-sm"
+            class="inline-block py-4 px-6 rounded-sm bg-grey-darker text-white no-underline font-medium text-sm hover:bg-grey-dark"
             style="letter-spacing: 0.3px;"
           >
             Install the webclient
