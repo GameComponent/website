@@ -32,10 +32,10 @@
       <div class="container bg-white mx-auto rounded clearfix py-16 lg:py-32">
         <div class="w-full md:float-left md:w-2/3 px-8 lg:px-16 mt-8 md:mt-0">
           <span class="uppercase text-xs font-bold text-grey-darker leading-normal" style="letter-spacing: 0.5px;">
-            Apache 2.0 + Commons Clause
+            THE LICENSE
           </span>
           <h2 class="text-black text-4xl leading-tight">
-            The license
+            Apache 2.0 + Commons Clause
           </h2>
           <p class="text-grey-darker leading-roomy mt-6">
             The services are released under the Apache 2.0 + Commons Clause license. This is a standard Apache 2.0 license with a restriction on the sale of the software.
