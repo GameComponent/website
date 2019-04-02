@@ -1,26 +1,18 @@
 <style scoped>
-  .background--clouds {
-    background-color: #cfeffc;
-    background-image: url('~assets/img/bg_clouds_repeat.svg');
-    background-repeat: repeat-x;
-    background-position: bottom left;
-    background-size: 512px 622px;
-  }
-
-  .button--shadow {
-    box-shadow: 0 10px 32px 0 rgba(12, 12, 13, .05), 0 2px 16px 0 rgba(12, 12, 13, .01)
+  .background--light-blue {
+    background-image: linear-gradient(-90deg, #b3f1ff, #cff5fe);
   }
 </style>
 
 <template>
   <div>
-    <section class="background--clouds">
-      <div class="container mx-auto clearfix py-16 md:py-32 px-8 lg:px-16">
+    <section class="background--light-blue">
+      <div class="container mx-auto clearfix pb-16 pt-16 md:pt-32 px-8 lg:px-16">
         <div
           class="w-full md:w-1/2 md:float-right md:flex md:items-center md:justify-center"
         >
           <img
-            src="~assets/illustration/parachute.svg"
+            src="~assets/illustration/game_time.svg"
             alt=""
             class="w-64 h-64"
           >
@@ -36,7 +28,7 @@
       </div>
     </section>
 
-    <section class="pb-32">
+    <section class="py-16 lg:py-32">
       <div class="container bg-white mx-auto rounded clearfix mb-16">
         <div class="pb-16 px-8 lg:px-16">
           <div class="uppercase text-xs font-bold text-grey-darker leading-normal mt-4" style="letter-spacing: 0.5px;">
@@ -97,6 +89,7 @@
         </div>
       </div>
     </section>
+
   </div>
 </template>
 
