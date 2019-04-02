@@ -153,7 +153,7 @@
               </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/roadmap" class="no-underline text-white hover:text-blue">
+              <nuxt-link to="/license" class="no-underline text-white hover:text-blue">
                 License
               </nuxt-link>
             </li>
