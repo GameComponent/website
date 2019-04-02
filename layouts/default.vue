@@ -1,5 +1,5 @@
 <template>
-  <div class="font-sans">
+  <div class="font-sans overflow-x-hidden w-full">
     <navigation />
     <nuxt/>
     <bottom />
