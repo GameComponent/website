@@ -3,9 +3,9 @@
   box-shadow: 0 10px 32px 0 rgba(12,12,13,.05), 0 2px 16px 0 rgba(12,12,13,.01)
 }
 
-.background--dots {
+.background--artsy {
   background-image: url('~assets/img/bg.svg');
-  background-color: #d4d5d6;
+  background-color: #e4e6e8;
   background-size: 100%;
 }
 
@@ -36,7 +36,7 @@
 </style>
 
 <template>
-  <section class="background--dots p-4 py-16 md:p-32">
+  <section class="background--artsy p-4 py-16 md:p-32">
     <div class="relative container container--octocat container--soft-shadow mx-auto rounded-sm bg-grey-lighter p-4 md:p-16 ">
       <span class="uppercase text-xs font-bold text-grey-darker leading-normal" style="letter-spacing: 0.5px;">
         HELP US
