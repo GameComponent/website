@@ -2,10 +2,6 @@
   .background--light-green {
     background-image: linear-gradient(90deg, #eef5eb, #cbfdcb)
   }
-
-  .container--first {
-    margin-top: -4rem;
-  }
 </style>
 
 <template>
@@ -33,20 +29,8 @@
     </section>
 
     <section>
-      <div class="container container--first bg-white mx-auto rounded clearfix mb-16">
-        <div class="h-12 py-6 px-8 uppercase text-xs font-bold text-grey-dark leading-normal">
-          <span style="letter-spacing: 0.5px;">
-            SERVICES
-          </span>
-          <span class="mx-2" style="letter-spacing: 0.5px;">
-            &rarr;
-          </span>
-          <span style="letter-spacing: 0.5px;">
-            ECONOMY-SERVICE
-          </span>
-        </div>
-
-        <div class="pt-16 pb-32 px-8 w-2/3">
+      <div class="container bg-white mx-auto rounded clearfix mb-16">
+        <div class="pt-16 lg:pt-32 px-8 lg:px-16 w-2/3">
           <span class="uppercase text-xs font-bold text-grey-darker leading-normal" style="letter-spacing: 0.5px;">
             THE BEGINNING
           </span>
@@ -87,21 +71,92 @@
       </div>
     </section>
 
+    <section class="py-16 lg:py-32">
+      <div class="container mx-auto clearfix bg-grey-lightest px-8 py-16 rounded-sm">
+        <div class="float-left w-full sm:w-1/2 lg:w-1/4 sm:pr-8 lg:p-8">
+          <img
+            src="@/assets/icons/icon-lock-open.svg"
+            alt=""
+            class="bg-green-lighter p-3 rounded-full"
+            style="width: 48px; height: 48px"
+          >
+          <div class="mt-4">
+            <h3 class="text-black font-bold text-xl" style="letter-spacing: 0.5px">
+              Vendor lock free
+            </h3>
+            <p class="mt-2 text-grey-darkest leading-normal">
+              You can host your own services. We don't have any proprietary code we run the same code that you run on.
+            </p>
+          </div>
+        </div>
+
+        <div class="float-left w-full sm:w-1/2 lg:w-1/4 pt-8 sm:pt-0 sm:pl-8 lg:p-8">
+          <img
+            src="@/assets/icons/icon-external-link.svg"
+            alt=""
+            class="bg-green-lighter p-3 rounded-full"
+            style="width: 48px; height: 48px"
+          >
+          <div class="mt-4">
+            <h3 class="text-black font-bold text-xl" style="letter-spacing: 0.5px">
+              Scalable
+            </h3>
+            <p class="mt-2 text-grey-darkest leading-normal">
+              We use Cockroachdb as our default database. This is a distrubted database that allows for enormous scale and high availablilty.
+            </p>
+          </div>
+        </div>
+
+        <div class="float-left w-full sm:w-1/2 lg:w-1/4 pt-8 sm:pr-8 lg:p-8">
+          <img
+            src="@/assets/icons/icon-puzzle.svg"
+            alt=""
+            class="bg-green-lighter p-3 rounded-full"
+            style="width: 48px; height: 48px"
+          >
+          <div class="mt-4">
+            <h3 class="text-black font-bold text-xl" style="letter-spacing: 0.5px">
+              Extendable
+            </h3>
+            <p class="mt-2 text-grey-darkest leading-normal">
+              The code of our services is available on Github. No more hacking around a service, if you need this service to do magic you can program it to do magic.
+            </p>
+          </div>
+        </div>
+
+        <div class="float-left w-full sm:w-1/2 lg:w-1/4 pt-8 sm:pl-8 lg:p-8">
+          <img
+            src="@/assets/icons/icon-heart.svg"
+            alt=""
+            class="bg-green-lighter p-4 rounded-full"
+            style="width: 48px; height: 48px"
+          />
+          <div class="mt-4">
+            <h3 class="text-black font-bold text-xl" style="letter-spacing: 0.5px">
+              Lot of features
+            </h3>
+            <p class="mt-2 text-grey-darkest leading-normal">
+              We don't just provide technical tools, your entire team can easily make us of our services.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="md:flex">
       <div class="w-full md:w-1/2 flex justify-center items-center bg-grey-lighter">
         <div class="px-8 py-16 lg:py-32">
           <span class="uppercase text-xs font-bold text-grey-darker leading-normal" style="letter-spacing: 0.5px;">
             BACKEND
           </span>
-          <h2 class="text-black text-4xl leading-tight">Star our project on Github</h2>
+          <h2 class="text-black text-4xl leading-tight">The service</h2>
           <p class="text-grey-darker leading-normal mt-4">
-            Feel free to add your ideas as issues.<br/>
-            Need help? Visit Stackoverflow.
+            This is the economy service, run this to expose a GRPC API.
           </p>
           <div class="mt-8">
             <a
               href="https://github.com/GameComponent/economy-service"
-              class="inline-block py-4 px-6 rounded-sm bg-grey-darker text-white no-underline font-medium text-sm"
+              class="inline-block py-4 px-6 rounded-sm bg-grey-darker text-white no-underline font-medium text-sm hover:bg-grey-dark"
               style="letter-spacing: 0.3px;"
             >
               Go to project
@@ -115,15 +170,14 @@
           <span class="uppercase text-xs font-bold text-grey-darker leading-normal" style="letter-spacing: 0.5px;">
             FRONTEND
           </span>
-          <h2 class="text-black text-4xl leading-tight">Star our project on Github</h2>
+          <h2 class="text-black text-4xl leading-tight">The webclient</h2>
           <p class="text-grey-darker leading-normal mt-4">
-            Feel free to add your ideas as issues.<br/>
-            Need help? Visit Stackoverflow.
+            This is the webclient. You can easily create items, virtual currencies and shops in here.
           </p>
           <div class="mt-8">
             <a
               href="https://github.com/GameComponent/economy-service"
-              class="inline-block py-4 px-6 rounded-sm bg-grey-darker text-white no-underline font-medium text-sm"
+              class="inline-block py-4 px-6 rounded-sm bg-grey-darker text-white no-underline font-medium text-sm hover:bg-grey-dark"
               style="letter-spacing: 0.3px;"
             >
               Go to project
