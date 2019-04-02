@@ -143,11 +143,6 @@
 
           <ul class="list-reset text-white leading-normal mt-2">
             <li>
-              <nuxt-link to="/about" class="no-underline text-white hover:text-blue">
-                About
-              </nuxt-link>
-            </li>
-            <li>
               <nuxt-link to="/roadmap" class="no-underline text-white hover:text-blue">
                 Roadmap
               </nuxt-link>
