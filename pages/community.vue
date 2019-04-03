@@ -99,7 +99,7 @@
       </div>
     </section>
 
-    <section class="pt-16">
+    <section class="pt-16 pb-16 lg:pb-32">
       <div class="container mx-auto md:clearfix px-8 lg:px-16">
         <div class="uppercase text-xs font-bold text-grey-darker leading-normal" style="letter-spacing: 0.5px;">
           <span class="ml-1">I WANT TO HELP</span>
@@ -121,69 +121,6 @@
         </div>
       </div>
     </section>
-
-    <section class="py-16 lg:py-32">
-      <div class="container bg-white mx-auto rounded clearfix mb-16">
-        <div class="pb-16 px-8 lg:px-16">
-          <div class="uppercase text-xs font-bold text-grey-darker leading-normal mt-4" style="letter-spacing: 0.5px;">
-            QUICK LINKS
-          </div>
-
-          <div class="mt-2 lg:flex">
-            <div class="w-full lg:w-1/4 flex justify-center items-center border border-grey rounded-sm button--shadow">
-              <div class="py-6 text-grey-darkest font-bold text-xl">
-                <img
-                  src="@/assets/icons/icon-news.svg"
-                  alt=""
-                  class="align-bottom"
-                />
-                Twitter
-              </div>
-            </div>
-
-            <div class="w-full lg:w-1/4 flex justify-center items-center border border-grey rounded-sm button--shadow mt-8 lg:mt-0 lg:mx-8 ">
-              <div class="py-6 text-grey-darkest font-bold text-xl">
-                <img
-                  src="@/assets/icons/icon-group.svg"
-                  alt=""
-                  class="align-bottom"
-                />
-                Community
-              </div>
-            </div>
-
-            <div class="w-full lg:w-1/4 flex justify-center items-center border border-grey rounded-sm button--shadow mt-8 lg:mt-0 mr-8">
-              <a
-                href="https://www.youtube.com/channel/UC6dsYX3e2yAX5uM3UaOGnEQ"
-                class="py-6 w-full text-center no-underline text-grey-darkest font-bold text-xl hover:bg-grey-lighter"
-              >
-                <img
-                  src="@/assets/icons/icon-video.svg"
-                  alt=""
-                  class="align-bottom"
-                />
-                Videos
-              </a>
-            </div>
-
-            <div class="w-full lg:w-1/4 flex justify-center items-center border border-grey rounded-sm button--shadow mt-8 lg:mt-0">
-                <a
-                  href="https://www.youtube.com/channel/UC6dsYX3e2yAX5uM3UaOGnEQ"
-                  class="py-6 w-full text-center no-underline text-grey-darkest font-bold text-xl hover:bg-grey-lighter"
-                >
-                  <img
-                    src="@/assets/icons/icon-video.svg"
-                    alt=""
-                    class="align-bottom"
-                  />
-                  Videos
-                </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
   </div>
 </template>
 
