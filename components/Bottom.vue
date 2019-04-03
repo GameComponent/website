@@ -91,7 +91,7 @@
           </span>
           <ul class="list-reset text-white leading-normal mt-2">
             <li>
-              <nuxt-link to="/developers/documentation" class="no-underline text-white hover:text-blue">
+              <nuxt-link to="/developers" class="no-underline text-white hover:text-blue">
                 Documentation
               </nuxt-link>
             </li>
