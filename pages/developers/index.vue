@@ -15,7 +15,7 @@
 <template>
   <div>
     <section class="background--light-blue">
-      <div class="container mx-auto py-32 px-16 clearfix">
+      <div class="container mx-auto py-32 px-8 lg:px-16 clearfix">
         <div class="w-full md:w-1/2 md:float-right md:flex md:justify-center md:items-center">
           <img
             src="~assets/illustration/mind_map.svg"
@@ -37,7 +37,7 @@
     <section>
       <div class="container container--first bg-white mx-auto rounded clearfix mb-16">
         <!-- Breadcrumbs -->
-        <div class="h-12 py-6 px-8 uppercase text-xs font-bold text-grey-dark leading-normal">
+        <div class="h-12 py-6 px-8 lg:mx-8 uppercase text-xs font-bold text-grey-dark leading-normal">
           <span style="letter-spacing: 0.5px;">
             DOCUMENTATION
           </span>
@@ -49,7 +49,7 @@
           </span>
         </div>
 
-        <div class="pt-16 px-8">
+        <div class="pt-16 px-8 lg:px-16">
           <div class="pb-16">
             <div class="uppercase text-xs font-bold text-grey-darker leading-normal" style="letter-spacing: 0.5px;">
               <div
@@ -95,7 +95,7 @@
         </div>
 
         <div class="py-16 md:pb-32">
-          <div class="px-8">
+          <div class="px-8 lg:px-16">
             <div class="uppercase text-xs font-bold text-grey-darker leading-normal mt-4" style="letter-spacing: 0.5px;">
               QUICK LINKS
             </div>

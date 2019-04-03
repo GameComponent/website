@@ -21,7 +21,7 @@
     <section>
       <div class="container container--first bg-white mx-auto rounded clearfix mb-16">
         <!-- Breadcrumbs -->
-        <div class="h-12 py-6 px-8 uppercase text-xs font-bold text-grey-dark leading-normal">
+        <div class="h-12 py-6 px-8 lg:px-16 uppercase text-xs font-bold text-grey-dark leading-normal">
           <span style="letter-spacing: 0.5px;">
             <nuxt-link to="/developers" class="no-underline text-grey-dark hover:text-blue cursor-pointer">
               DEVELOPERS
@@ -43,7 +43,7 @@
           </span>
         </div>
 
-        <div class="pt-16 pb-32 px-8">
+        <div class="pt-16 pb-32 px-8 lg:px-16">
           <div class="pb-16">
             <div class="uppercase text-xs font-bold text-grey-darker leading-normal" style="letter-spacing: 0.5px;">
               <div
