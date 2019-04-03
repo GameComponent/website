@@ -184,6 +184,7 @@
       <nav class="navigation float-right">
         <ul>
           <li
+            ref="firstItem"
             class="navigation__item has-dropdown"
             data-content="services"
             @mouseenter="handleMouseEnterItem"
@@ -396,7 +397,7 @@ export default class Navigation extends Vue {
   };
 
   public mounted() {
-
+    this.updateDropdown(this.$refs.firstItem);
   }
 
   public handleMouseLeaveHeader() {
@@ -429,11 +430,20 @@ export default class Navigation extends Vue {
     this.open = !this.open;
   }
 
-  public showDropdown(item) {
+  public showDropdown(selectedItem) {
+    this.updateDropdown(selectedItem);
+    this.active = selectedItem.dataset.content;
+  }
+
+  public hideDropdown() {
+    this.active = '';
+  }
+
+  public updateDropdown(selectedItem) {
     const selectedDropdown: Element | null = (<Element>this.$refs.dropdown).querySelector(
-      `#${item.dataset.content}`
+      `#${selectedItem.dataset.content}`
     );
-    const selectedDropdownHeight = selectedDropdown ? selectedDropdown.clientHeight : 0;
+    const height = selectedDropdown ? selectedDropdown.clientHeight : 0;
     const childNodes: any = selectedDropdown ? selectedDropdown.childNodes : [];
     const elments: any = (selectedDropdown ? [...childNodes] : []);
 
@@ -442,23 +452,9 @@ export default class Navigation extends Vue {
       if (!item.classList) return false;
       return item.classList.contains("content");
     });
-    const selectedDropdownWidth = content ? (<Element>content).clientWidth : 0;
-    const selectedDropdownLeft =
-      item.offsetLeft + item.clientWidth / 2 - selectedDropdownWidth / 2;
-    this.updateDropdown(
-      selectedDropdownHeight,
-      selectedDropdownWidth,
-      selectedDropdownLeft,
-    );
+    const width = content ? (<Element>content).clientWidth : 0;
+    const left = selectedItem.offsetLeft + (selectedItem.clientWidth / 2) - (width / 2);
 
-    this.active = item.dataset.content;
-  }
-
-  public hideDropdown() {
-    this.active = '';
-  }
-
-  public updateDropdown(height, width, left) {
     this.dropdownContentStyle = {
       width: `${width}px`,
       height: `${height}px`,
