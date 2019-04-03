@@ -22,11 +22,11 @@
         <div class="mt-8">
           <div class="md:inline-block">
             <a
-              href="/services"
+              href="/services/economy-service"
               class="inline-block py-4 px-6 rounded-sm bg-blue text-white no-underline font-medium text-sm hover:bg-blue-light"
               style="letter-spacing: 0.3px;"
             >
-              Checkout the services
+              Checkout economy service
             </a>
           </div>
           <!-- <div class="mt-2 md:mt-0 md:inline-block md:ml-4">
