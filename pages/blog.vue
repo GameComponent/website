@@ -11,7 +11,7 @@
 <template>
   <div>
     <section class="background--light-blue">
-      <div class="container mx-auto clearfix py-32 px-8 lg:px-16">
+      <div class="container mx-auto clearfix pt-32 pb-16 px-8 lg:px-16">
         <div
           class="w-full md:w-1/2 md:float-right flex items-center justify-center"
         >
@@ -27,7 +27,7 @@
             Blog
           </h1>
           <p class="text-grey-darker mt-4 text-xl leading-normal">
-            Let's get together and feel all right.
+            Stay up to date. Get an inside look.
           </p>
         </div>
       </div>
