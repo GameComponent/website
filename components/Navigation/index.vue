@@ -291,7 +291,7 @@
               :class="{ 'dropdown__item--active': active === 'developers' }"
             >
               <div class="content">
-                <nuxt-link to="/developers/economy-service/documentation" class="block clearfix p-4 hover:bg-grey-lighter rounded-t">
+                <nuxt-link to="/developers/economy-service" class="block clearfix p-4 hover:bg-grey-lighter rounded-t">
                   <div class="float-left">
                     <img
                       src="@/assets/icons/icon-information.svg"
