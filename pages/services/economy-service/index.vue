@@ -7,7 +7,7 @@
 <template>
   <div>
     <section class="background--light-green">
-      <div class="container mx-auto py-32 px-16 clearfix">
+      <div class="container mx-auto pt-32 pb-16 px-8 lg:px-16 clearfix">
         <div class="w-full md:w-1/2 md:float-right md:flex md:justify-center md:items-center">
           <img
             src="~assets/img/town.png"
@@ -23,8 +23,23 @@
             Do you need items, virtual currencies and shops?<br>
             This service is for you.
           </p>
+          <div class="mt-8">
+            <nuxt-link
+              to="/developers/economy-service/installation"
+              class="inline-block py-4 px-6 rounded-sm bg-green text-white no-underline font-medium text-sm hover:bg-green-light"
+              style="letter-spacing: 0.3px;"
+            >
+              Installation guide
+            </nuxt-link>
+            <nuxt-link
+              to="/developers/economy-service"
+              class="mt-2 sm:mt-0 inline-block py-4 px-6 rounded-sm bg-grey-darker text-white no-underline font-medium text-sm hover:bg-grey-dark"
+              style="letter-spacing: 0.3px;"
+            >
+              Documentation
+            </nuxt-link>
+          </div>
         </div>
-
       </div>
     </section>
 
@@ -32,7 +47,7 @@
       <div class="container bg-white mx-auto rounded clearfix mb-16">
         <div class="pt-16 lg:pt-32 px-8 lg:px-16 w-2/3">
           <span class="uppercase text-xs font-bold text-grey-darker leading-normal" style="letter-spacing: 0.5px;">
-            THE BEGINNING
+            THE STORY
           </span>
           <h2 class="text-black text-4xl leading-tight">
             The economy service

@@ -53,66 +53,44 @@
           <div class="pb-16">
             <div class="uppercase text-xs font-bold text-grey-darker leading-normal" style="letter-spacing: 0.5px;">
               <div
-                class="w-2 h-2 rounded-full inline-block v-mid"
-                style="background: #38c172;"
+                class="bg-blue w-2 h-2 rounded-full inline-block v-mid"
               ></div>
-              <span class="ml-1">SERVICE</span>
+              <span class="ml-1">DEVELOPER</span>
             </div>
             <h2 class="text-black text-4xl" style="letter-spacing: 0.5px;">
-              Economy service
+              The services
             </h2>
-            <p class="text-grey-darker mt-4 text-xl leading-normal" style="letter-spacing: 0.5px;">
-              Do not reinvent the wheel.
-              We provide software services that power parts of your game.
-              Use our economy service to create shops, items and currencies.
+            <p class="text-grey-darker mt-4 text-xl leading-normal w-2/3" style="letter-spacing: 0.5px;">
+              Select the services you want to read more about. Here you can find documentation, tutorial, examples and specifications.
             </p>
           </div>
 
           <div class="md:flex">
-            <!-- REST -->
             <div class="w-full md:w-1/2 lg:w-1/3 border border-grey rounded-sm button--shadow">
               <div class="p-16">
-                <h2 class="text-black text-4xl leading-tight md:mt-4">
-                  REST API
+                <h2 class="text-black text-2xl leading-tight md:mt-4">
+                  Economy service
                 </h2>
                 <p class="text-grey-darker leading-normal mt-4">
-                  Checkout the OpenAPI/Swagger documentation.
+                  Use the economy service to create items, currencies and shops.
                 </p>
                 <div class="mt-8">
-                  <a
-                    href="https://generator.swagger.io/?url=https://raw.githubusercontent.com/GameComponent/economy-service/master/api/swagger/v1/economy-service.swagger.json"
-                    class="inline-block py-4 px-6 rounded-sm bg-grey-darker text-white no-underline font-medium text-sm"
+                  <nuxt-link
+                    to="/developers/economy-service"
+                    class="inline-block py-4 px-6 rounded-sm bg-grey-darker text-white no-underline font-medium text-sm hover:bg-grey-dark"
                     style="letter-spacing: 0.3px;"
                   >
                     Check it out
-                  </a>
+                  </nuxt-link>
                 </div>
               </div>
             </div>
-
-            <!-- GRPC -->
-            <div class="w-full md:w-1/2 lg:w-1/3 border border-grey rounded-sm button--shadow mt-8 md:mt-0 md:mx-8">
-              <div class="p-16">
-
-                <h2 class="text-black text-4xl leading-tight md:mt-4">
-                  GRPC API
-                </h2>
-                <p class="text-grey-darker leading-normal mt-4">
-                  Checkout the GRPC/Protobuf documentation/specification file.
-                </p>
-                <div class="mt-8">
-                  <a
-                    href="https://github.com/GameComponent/economy-service/blob/master/api/proto/v1/economy-service.proto"
-                    class="inline-block py-4 px-6 rounded-sm bg-grey-darker text-white no-underline font-medium text-sm"
-                    style="letter-spacing: 0.3px;"
-                  >
-                    Check it out
-                  </a>
-                </div>
+            <div class="w-full md:w-1/2 lg:w-1/3 bg-grey-light border border-grey rounded-sm button--shadow mt-8 md:mt-0 md:mx-8 flex justify-center items-center">
+              <div class="p-16 text-center text-grey-darker leading-normal">
+                More services will be created in the future.
               </div>
             </div>
-
-            <div class="lg:w-1/3 flex justify-center items-center"></div>
+            <div class="w-full lg:w-1/3 flex justify-center items-center"></div>
           </div>
         </div>
 

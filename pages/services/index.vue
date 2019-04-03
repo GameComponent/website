@@ -65,7 +65,7 @@
             <div class="mt-8">
               <nuxt-link
                 to="/services/economy-service"
-                class="inline-block py-4 px-6 rounded-sm bg-blue text-white no-underline font-medium text-sm"
+                class="inline-block py-4 px-6 rounded-sm bg-green text-white no-underline font-medium text-sm hover:bg-green-light"
                 style="letter-spacing: 0.3px;"
               >
                 Learn more
