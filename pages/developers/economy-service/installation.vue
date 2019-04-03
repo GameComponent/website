@@ -65,21 +65,21 @@
             <p class="text-grey-darker mt-4 text-xl leading-normal" style="letter-spacing: 0.5px;">
               Clone the <a href="https://github.com/GameComponent/economy-service" class="no-underline text-blue">service repository</a>.
               Install all the GO dependecies.
-              Navigate to the <pre class="inline-block bg-grey-light rounded">/cmd/server</pre> folder.
-              Do a <pre class="inline-block bg-grey-light rounded">go build</pre> command here.
+              Navigate to the <pre class="inline-block bg-grey-light rounded px-2">/cmd/server</pre> folder.
+              Do a <pre class="inline-block bg-grey-light rounded px-2">go build</pre> command here.
               If the go build command throws errors try to resolve those errors. Most likely those errors are caused by missing grpc dependencies.
-              Once the <pre class="inline-block bg-grey-light rounded">go build</pre> succeeds run the output binary.
+              Once the <pre class="inline-block bg-grey-light rounded px-2">go build</pre> succeeds run the output binary.
               The binary should output all available launch parameters.
             </p>
 
             <div class="uppercase text-xs font-bold text-grey-darker leading-normal mt-8" style="letter-spacing: 0.5px;">
-              INSTALLING THE WEBCLIENTJ
+              INSTALLING THE WEBCLIENT
             </div>
             <p class="text-grey-darker mt-4 text-xl leading-normal" style="letter-spacing: 0.5px;">
               Clone the <a href="https://github.com/GameComponent/economy-webclient" class="no-underline text-blue">webclient repository</a>.
-              Run <pre class="inline-block bg-grey-light rounded">npm install</pre>.
-              Run <pre class="inline-block bg-grey-light rounded">npm run serve</pre>.
-              Make sure all <pre class="inline-block bg-grey-light rounded">ENVIRONMENT VARIABLES</pre> are set correctly so the webclient connects to the correct service.
+              Run <pre class="inline-block bg-grey-light rounded px-2">npm install</pre>.
+              Run <pre class="inline-block bg-grey-light rounded px-2">npm run serve</pre>.
+              Make sure all <pre class="inline-block bg-grey-light rounded px-2">ENVIRONMENT VARIABLES</pre> are set correctly so the webclient connects to the correct service.
             </p>
           </div>
 
