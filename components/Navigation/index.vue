@@ -377,6 +377,7 @@
 import {
   Component,
   Vue,
+  Watch,
 } from "nuxt-property-decorator"
 import Hamburger from "./components/Hamburger.vue"
 
@@ -468,6 +469,12 @@ export default class Navigation extends Vue {
       height: '',
       transform: '',
     };
+  }
+
+  @Watch('$route')
+  onRouteChange() {
+    this.open = false;
+    this.active = '';
   }
 };
 </script>
