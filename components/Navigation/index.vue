@@ -472,7 +472,9 @@ export default class Navigation extends Vue {
   }
 
   @Watch('$route')
-  onRouteChange() {
+  onRouteChange(newRoute, oldRoute) {
+    if (newRoute.hash === '#0' && oldRoute.hash === '') return;
+
     this.open = false;
     this.active = '';
   }
