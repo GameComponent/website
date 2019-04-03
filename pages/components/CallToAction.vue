@@ -5,7 +5,7 @@
         Let's get started
       </h2>
       <p class="text-grey-darker mt-2 text-xl leading-normal" style="letter-spacing: 0.5px;">
-        Be up and running in minutes.
+        Checkout the source repository.
       </p>
       <div class="mt-8">
         <div class="md:inline-block">
@@ -14,7 +14,7 @@
             class="inline-block py-4 px-6 rounded-sm bg-blue text-white no-underline font-medium text-sm hover:bg-blue-light"
             style="letter-spacing: 0.3px;"
           >
-            Install the service
+            Checkout the service
           </a>
         </div>
 
@@ -24,7 +24,7 @@
             class="inline-block py-4 px-6 rounded-sm bg-grey-darker text-white no-underline font-medium text-sm hover:bg-grey-dark"
             style="letter-spacing: 0.3px;"
           >
-            Install the webclient
+            Checkout the webclient
           </a>
         </div>
       </div>
