@@ -92,7 +92,7 @@
                   Service repository
                 </h2>
                 <p class="text-grey-darker leading-normal mt-4">
-                  Checkout the GitHub repository.
+                  Check out the GitHub repository.
                 </p>
                 <div class="mt-8">
                   <a
@@ -114,7 +114,7 @@
                   Webclient repository
                 </h2>
                 <p class="text-grey-darker leading-normal mt-4">
-                  Checkout the GitHub repository.
+                  Check out the GitHub repository.
                 </p>
                 <div class="mt-8">
                   <a

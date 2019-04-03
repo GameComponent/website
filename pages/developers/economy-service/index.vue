@@ -82,7 +82,7 @@
                   Service repository
                 </h2>
                 <p class="text-grey-darker leading-normal mt-4">
-                  Checkout the GitHub repository.
+                  Check out the GitHub repository.
                 </p>
                 <div class="mt-8">
                   <a
@@ -104,7 +104,7 @@
                   Webclient repository
                 </h2>
                 <p class="text-grey-darker leading-normal mt-4">
-                  Checkout the GitHub repository.
+                  Check out the GitHub repository.
                 </p>
                 <div class="mt-8">
                   <a
@@ -125,7 +125,7 @@
                   REST API
                 </h2>
                 <p class="text-grey-darker leading-normal mt-4">
-                  Checkout the OpenAPI/Swagger documentation.
+                  Check out the OpenAPI/Swagger documentation.
                 </p>
                 <div class="mt-8">
                   <a
@@ -147,7 +147,7 @@
                   GRPC API
                 </h2>
                 <p class="text-grey-darker leading-normal mt-4">
-                  Checkout the GRPC/Protobuf documentation/specification file.
+                  Check out the GRPC/Protobuf documentation/specification file.
                 </p>
                 <div class="mt-8">
                   <a

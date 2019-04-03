@@ -43,7 +43,7 @@
           <p class="text-grey-darker leading-roomy mt-6">
             All our work is done completely in the open. We current do not own any private repositories.
             The services code is <nuxt-link to="/license" class="no-underline text-blue">licensed under the Apache 2.0 + Commons Clause license</nuxt-link>.
-            To see what technoglogies we use just checkout our <a class="no-underline text-blue" href="http://github.com/GameComponent" target="_blank">Github repository &#x1F5D7;</a>.
+            To see what technoglogies we use just check out our <a class="no-underline text-blue" href="http://github.com/GameComponent" target="_blank">Github repository &#x1F5D7;</a>.
           </p>
         </div>
       </div>

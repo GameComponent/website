@@ -26,7 +26,7 @@
               class="inline-block py-4 px-6 rounded-sm bg-blue text-white no-underline font-medium text-sm hover:bg-blue-light"
               style="letter-spacing: 0.3px;"
             >
-              Checkout economy service
+              Check out the economy service
             </a>
           </div>
           <!-- <div class="mt-2 md:mt-0 md:inline-block md:ml-4">

@@ -103,7 +103,7 @@
           </h2>
           <p class="text-grey-darker leading-roomy mt-6">
             We have created a roadmap for the economy service. However we are no fortune-tellers.
-            You should checkout the <nuxt-link to="/blog" class="no-underline text-blue">blog</nuxt-link> to get a better image of the current state of the project.
+            You should check out the <nuxt-link to="/blog" class="no-underline text-blue">blog</nuxt-link> to get a better image of the current state of the project.
           </p>
         </div>
       </div>
