@@ -2,6 +2,13 @@
   .background--light-green {
     background-image: linear-gradient(90deg, #eef5eb, #cbfdcb)
   }
+
+  @media (min-width: 992px) {
+    .hover\:scale:hover {
+      transform: scale(1.02);
+      transition: .25s;
+    }
+  }
 </style>
 
 <template>
@@ -160,7 +167,7 @@
 
     <section class="py-16 lg:py-32">
       <div class="container mx-auto md:flex">
-        <div class="w-full md:w-1/2 md:flex md:justify-center md:items-center bg-grey-lighter">
+        <div class="w-full md:w-1/2 md:flex md:justify-center md:items-center bg-grey-lighter hover:scale">
           <div class="px-8 py-16 lg:px-16 lg:py-32">
             <span class="uppercase text-xs font-bold text-grey-darker leading-normal" style="letter-spacing: 0.5px;">
               BACKEND
@@ -181,8 +188,8 @@
           </div>
         </div>
 
-        <div class="w-full md:w-1/2 md:flex md:justify-center md:items-center bg-green-lighter">
-          <div class="px-8 py-16 lg:px-16 lg:py-32">
+        <div class="w-full md:w-1/2 md:flex md:justify-center md:items-center bg-green-lighter hover:scale">
+          <div class="px-8 py-16 lg:px-16 gitlg:py-32">
             <span class="uppercase text-xs font-bold text-grey-darker leading-normal" style="letter-spacing: 0.5px;">
               FRONTEND
             </span>
