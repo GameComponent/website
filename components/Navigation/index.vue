@@ -165,7 +165,7 @@
     :class="{
       'is-dropdown-visible': active !== '',
     }"
-    @mouseleave="handleMouseLeaveHeader"
+    @mouseleave="onMouseLeaveHeader"
   >
     <div class="container mx-auto px-8 lg:px-16 clearfix">
       <nuxt-link to="/" class="header__logo float-left">
@@ -178,7 +178,7 @@
 
       <hamburger
         :open="open"
-        @click="handleClickHamburger"
+        @click="onClickHamburger"
       />
 
       <nav class="navigation float-right">
@@ -187,8 +187,8 @@
             ref="firstItem"
             class="navigation__item has-dropdown"
             data-content="services"
-            @mouseenter="handleMouseEnterItem"
-            @mouseleave="handleMouseLeaveItem"
+            @mouseenter="onMouseEnterItem"
+            @mouseleave="onMouseLeaveItem"
           >
             <nuxt-link
               to="/services"
@@ -202,8 +202,8 @@
           <li
             class="navigation__item has-dropdown button"
             data-content="developers"
-            @mouseenter="handleMouseEnterItem"
-            @mouseleave="handleMouseLeaveItem"
+            @mouseenter="onMouseEnterItem"
+            @mouseleave="onMouseLeaveItem"
           >
             <nuxt-link
               to="/developers"
@@ -217,8 +217,8 @@
           <li
             class="navigation__item has-dropdown button"
             data-content="community"
-            @mouseenter="handleMouseEnterItem"
-            @mouseleave="handleMouseLeaveItem"
+            @mouseenter="onMouseEnterItem"
+            @mouseleave="onMouseLeaveItem"
           >
             <nuxt-link
               to="/community"
@@ -248,8 +248,8 @@
         :class="{
           'dropdown--open': open,
         }"
-        @mouseenter.prevent.stop="handleDropdownMouseEnter"
-        @mouseleave.prevent.stop="handleDropdownMouseLeave"
+        @mouseenter.prevent.stop="onDropdownMouseEnter"
+        @mouseleave.prevent.stop="onDropdownMouseLeave"
       >
         <div
           class="dropdown__content rounded"
@@ -376,7 +376,7 @@
 <script lang="ts">
 import {
   Component,
-  Vue
+  Vue,
 } from "nuxt-property-decorator"
 import Hamburger from "./components/Hamburger.vue"
 
@@ -400,32 +400,32 @@ export default class Navigation extends Vue {
     this.updateDropdown(this.$refs.firstItem);
   }
 
-  public handleMouseLeaveHeader() {
-    console.log('handleMouseLeaveHeader');
+  public onMouseLeaveHeader() {
+    console.log('onMouseLeaveHeader');
     this.hideDropdown();
   }
 
-  public handleMouseEnterItem(e) {
-    console.log('handleMouseEnterItem');
+  public onMouseEnterItem(e) {
+    console.log('onMouseEnterItem');
     this.showDropdown(e.target);
   }
 
-  public handleMouseLeaveItem(e) {
-    console.log('handleMouseLeaveItem', e);
+  public onMouseLeaveItem(e) {
+    console.log('onMouseLeaveItem', e);
     if (this.active === '') {
       this.hideDropdown();
     }
   }
 
-  public handleDropdownMouseLeave() {
-    console.log('handleDropdownMouseLeave');
+  public onDropdownMouseLeave() {
+    console.log('onDropdownMouseLeave');
   }
 
-  public handleDropdownMouseEnter() {
-    console.log('handleDropdownMouseEnter');
+  public onDropdownMouseEnter() {
+    console.log('onDropdownMouseEnter');
   }
 
-  public handleClickHamburger() {
+  public onClickHamburger() {
     this.reset();
     this.open = !this.open;
   }
