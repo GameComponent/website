@@ -86,7 +86,7 @@
       </div>
     </section>
 
-    <section class="py-16 lg:py-32">
+    <section class="pt-16 lg:pt-32">
       <div class="container mx-auto clearfix bg-grey-lightest px-8 py-16 rounded-sm">
         <div class="float-left w-full sm:w-1/2 lg:w-1/4 sm:pr-8 lg:p-8">
           <img
@@ -158,45 +158,47 @@
       </div>
     </section>
 
-    <section class="md:flex">
-      <div class="w-full md:w-1/2 flex justify-center items-center bg-grey-lighter">
-        <div class="px-8 py-16 lg:py-32">
-          <span class="uppercase text-xs font-bold text-grey-darker leading-normal" style="letter-spacing: 0.5px;">
-            BACKEND
-          </span>
-          <h2 class="text-black text-4xl leading-tight">The service</h2>
-          <p class="text-grey-darker leading-normal mt-4">
-            This is the economy service, run this to expose a GRPC API.
-          </p>
-          <div class="mt-8">
-            <a
-              href="https://github.com/GameComponent/economy-service"
-              class="inline-block py-4 px-6 rounded-sm bg-grey-darker text-white no-underline font-medium text-sm hover:bg-grey-dark"
-              style="letter-spacing: 0.3px;"
-            >
-              Go to project
-            </a>
+    <section class="py-16 lg:py-32">
+      <div class="container mx-auto md:flex">
+        <div class="w-full md:w-1/2 md:flex md:justify-center md:items-center bg-grey-lighter">
+          <div class="px-8 py-16 lg:px-16 lg:py-32">
+            <span class="uppercase text-xs font-bold text-grey-darker leading-normal" style="letter-spacing: 0.5px;">
+              BACKEND
+            </span>
+            <h2 class="text-black text-4xl leading-tight">The service</h2>
+            <p class="text-grey-darker leading-normal mt-4">
+              This is the economy service, run this to expose a GRPC API.
+            </p>
+            <div class="mt-8">
+              <a
+                href="https://github.com/GameComponent/economy-service"
+                class="inline-block py-4 px-6 rounded-sm bg-grey-darker text-white no-underline font-medium text-sm hover:bg-grey-dark"
+                style="letter-spacing: 0.3px;"
+              >
+                Go to project
+              </a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="w-full md:w-1/2 flex justify-center items-center bg-green-lighter">
-        <div class="px-8 py-16 lg:py-32">
-          <span class="uppercase text-xs font-bold text-grey-darker leading-normal" style="letter-spacing: 0.5px;">
-            FRONTEND
-          </span>
-          <h2 class="text-black text-4xl leading-tight">The webclient</h2>
-          <p class="text-grey-darker leading-normal mt-4">
-            This is the webclient. You can easily create items, virtual currencies and shops in here.
-          </p>
-          <div class="mt-8">
-            <a
-              href="https://github.com/GameComponent/economy-service"
-              class="inline-block py-4 px-6 rounded-sm bg-grey-darker text-white no-underline font-medium text-sm hover:bg-grey-dark"
-              style="letter-spacing: 0.3px;"
-            >
-              Go to project
-            </a>
+        <div class="w-full md:w-1/2 md:flex md:justify-center md:items-center bg-green-lighter">
+          <div class="px-8 py-16 lg:px-16 lg:py-32">
+            <span class="uppercase text-xs font-bold text-grey-darker leading-normal" style="letter-spacing: 0.5px;">
+              FRONTEND
+            </span>
+            <h2 class="text-black text-4xl leading-tight">The webclient</h2>
+            <p class="text-grey-darker leading-normal mt-4">
+              This is the webclient. You can easily create items, virtual currencies and shops in here.
+            </p>
+            <div class="mt-8">
+              <a
+                href="https://github.com/GameComponent/economy-service"
+                class="inline-block py-4 px-6 rounded-sm bg-grey-darker text-white no-underline font-medium text-sm hover:bg-grey-dark"
+                style="letter-spacing: 0.3px;"
+              >
+                Go to project
+              </a>
+            </div>
           </div>
         </div>
       </div>
