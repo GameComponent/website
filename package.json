@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "@nuxtjs/axios": "5.4.1",
+    "@nuxtjs/google-tag-manager": "^2.1.4",
     "core-js": "^2.6.5",
     "nuxt": "^2.5.1",
     "nuxt-property-decorator": "2.1.3",

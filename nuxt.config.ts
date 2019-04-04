@@ -24,6 +24,7 @@ const config: NuxtConfiguration = {
   modules: [
     "@nuxtjs/axios",
     "vue-github-buttons/nuxt",
+    ['@nuxtjs/google-tag-manager', { id: 'GTM-WPLNL89' }],
   ],
   axios: {}
 }
