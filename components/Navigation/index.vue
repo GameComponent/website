@@ -36,6 +36,7 @@
   background: white;
   will-change: width, height, transform;
   text-align: left;
+  transition: .15s;
 }
 
 .dropdown__items {
@@ -428,6 +429,12 @@ export default class Navigation extends Vue {
 
   public hideDropdown() {
     this.active = '';
+    this.dropdownContentStyle = {
+      ...this.dropdownContentStyle,
+      height: '0px',
+      opacity: 0,
+    }
+    this.open = false;
   }
 
   public updateDropdown(selectedItem) {
@@ -437,10 +444,7 @@ export default class Navigation extends Vue {
 
     if (!selectedDropdown) {
       this.hideDropdown();
-      this.dropdownContentStyle = {
-        ...this.dropdownContentStyle,
-        height: '0px',
-      }
+
 
       return;
     }
