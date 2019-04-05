@@ -52,7 +52,7 @@
 
     <section>
       <div class="container bg-white mx-auto rounded clearfix mb-16">
-        <div class="pt-16 lg:pt-32 px-8 lg:px-16 w-2/3">
+        <div class="pt-16 lg:pt-32 px-8 lg:px-16 w-full lg:w-2/3">
           <span class="uppercase text-xs font-bold text-grey-darker leading-normal" style="letter-spacing: 0.5px;">
             THE STORY
           </span>
