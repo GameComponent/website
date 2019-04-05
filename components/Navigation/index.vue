@@ -231,6 +231,7 @@
 
           <li
             class="navigation__item has-dropdown links"
+            @mouseenter="onMouseEnterItem"
           >
             <nuxt-link
               to="/blog"
@@ -248,8 +249,8 @@
         :class="{
           'dropdown--open': open,
         }"
-        @mouseenter.prevent.stop="onDropdownMouseEnter"
-        @mouseleave.prevent.stop="onDropdownMouseLeave"
+        @mouseenter.prevent.stop
+        @mouseleave.prevent.stop
       >
         <div
           class="dropdown__content rounded"
@@ -402,28 +403,17 @@ export default class Navigation extends Vue {
   }
 
   public onMouseLeaveHeader() {
-    console.log('onMouseLeaveHeader');
     this.hideDropdown();
   }
 
   public onMouseEnterItem(e) {
-    console.log('onMouseEnterItem');
     this.showDropdown(e.target);
   }
 
   public onMouseLeaveItem(e) {
-    console.log('onMouseLeaveItem', e);
     if (this.active === '') {
       this.hideDropdown();
     }
-  }
-
-  public onDropdownMouseLeave() {
-    console.log('onDropdownMouseLeave');
-  }
-
-  public onDropdownMouseEnter() {
-    console.log('onDropdownMouseEnter');
   }
 
   public onClickHamburger() {
@@ -444,11 +434,22 @@ export default class Navigation extends Vue {
     const selectedDropdown: Element | null = (<Element>this.$refs.dropdown).querySelector(
       `#${selectedItem.dataset.content}`
     );
+
+    if (!selectedDropdown) {
+      this.hideDropdown();
+      this.dropdownContentStyle = {
+        ...this.dropdownContentStyle,
+        height: '0px',
+      }
+
+      return;
+    }
+
     const height = selectedDropdown ? selectedDropdown.clientHeight : 0;
     const childNodes: any = selectedDropdown ? selectedDropdown.childNodes : [];
-    const elments: any = (selectedDropdown ? [...childNodes] : []);
+    const elements: any = (selectedDropdown ? [...childNodes] : []);
 
-    const content = elments.find((item) => {
+    const content = elements.find((item) => {
       if (!item) return false;
       if (!item.classList) return false;
       return item.classList.contains("content");
