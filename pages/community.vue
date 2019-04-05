@@ -4,10 +4,14 @@
   }
 
   .background--blog {
-    background-image: url('~assets/illustration/marketing.svg');
+    background-image: url('~assets/illustration/blog.svg');
     background-position: center left;
     background-repeat: no-repeat;
     background-size: contain;
+  }
+
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.10);
   }
 
   @media (min-width: 992px) {
@@ -78,7 +82,15 @@
               class="background--blog bg-blue-light rounded p-16 flex justify-center items-center no-underline hover:scale"
             >
               <div class="w-64 h-16 flex justify-center items-center">
-                <span class="text-white text-xl leading-normal">Read the blog</span>
+                <div class="text-center">
+                  <span class="text-shadow font-semibold text-white">
+                    THE
+                  </span>
+                  <br>
+                  <span class="text-shadow font-bold text-white text-4xl">
+                    BLOG
+                  </span>
+                </div>
               </div>
             </nuxt-link>
           </div>
