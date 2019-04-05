@@ -85,7 +85,7 @@
             A lot of closed source competitors don't allow this. So if their service lacks a feature you will have to work around it.
           </p>
 
-          <p class="mt-2">
+          <p class="mt-8">
             For the foreseeable future will put our efforts into creating the best economy service possible.
             Later on we will branch into other services.
             You can expect more blog posts in the future.
