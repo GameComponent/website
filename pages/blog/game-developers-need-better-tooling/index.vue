@@ -53,7 +53,7 @@
 
     <section class="pt-16">
       <div class="container mx-auto md:clearfix px-8 md:px-32 text-black text-lg leading-roomy">
-        <div class="px-8">
+        <div class="md:px-8">
 
           <h2 class="text-semi-bold text-xl">
             My personal reason to start GameComponent
@@ -111,14 +111,17 @@
     </section>
 
     <section class="pt-16 pb-32">
-      <div class="container mx-auto md:clearfix px-16 lg:px-32 lg:px-16">
-        <div class="float-left px-8">
-          <img
-            src="~assets/blog/people/niels_lanting.jpg"
-            alt=""
-            class="inline-block float-left w-16 h-16 rounded-full shadow"
-          >
-          <div class="inline-block float-left ml-8">
+      <div class="container mx-auto md:clearfix px-16 lg:px-32 lg:px-16 text-center md:text-left">
+        <div class=" w-full md:w-auto md:float-left clearfix">
+          <div class="w-full md:w-auto md:float-left md:ml-8">
+            <img
+              src="~assets/blog/people/niels_lanting.jpg"
+              alt=""
+              class="inline-block w-16 h-16 rounded-full shadow"
+            >
+          </div>
+
+          <div class="inline-block md:float-left md:ml-8">
             <div class="text-grey-darker leading-normal">
               <span class="font-semibold text-black text-xl">Niels Lanting</span>
               <br>
@@ -126,7 +129,8 @@
             </div>
           </div>
         </div>
-        <div class="float-right">
+
+        <div class="w-full md:w-auto overflow-hidden pt-8 md:pt-0 md:float-right px-8">
           <social-share
             description="Game developers need better tooling"
           ></social-share>
