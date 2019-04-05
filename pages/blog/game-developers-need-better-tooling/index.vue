@@ -81,7 +81,7 @@
           <p class="mt-2 text-grey-darkest">
             That's when we decided to focus on creating an inventory service. After a while we renamed it to economy service.
             Simply because it's not just about items but also about virtual currencies and shops.
-            I want the economy service to be a developer centered tool, if the service lacks a feature a developer should be able to edit the service to get that feature in.
+            wE want the economy service to be a developer centered tool, if the service lacks a feature a developer should be able to edit the service to get that feature in.
             A lot of closed source competitors don't allow this. So if their service lacks a feature you will have to work around it.
           </p>
 
