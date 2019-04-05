@@ -152,7 +152,7 @@ import SocialShare from '~/components/SocialShare.vue';
 export default class BlogWebiteOnline extends Vue {
   public head () {
     return {
-      title: 'GameComponent - Website online'
+      title: 'GameComponent - Game developers need better tooling'
     };
   }
 }
