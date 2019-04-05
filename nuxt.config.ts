@@ -1,7 +1,9 @@
 import NuxtConfiguration from '@nuxt/config'
 
 const config: NuxtConfiguration = {
-  env: {},
+  env: {
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000',
+  },
   head: {
     title: "GameComponent",
     meta: [

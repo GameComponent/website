@@ -112,7 +112,7 @@
 
     <section class="pt-16 pb-32">
       <div class="container mx-auto md:clearfix px-16 lg:px-32 lg:px-16">
-        <div class="px-8">
+        <div class="float-left px-8">
           <img
             src="~assets/blog/people/niels_lanting.jpg"
             alt=""
@@ -126,6 +126,11 @@
             </div>
           </div>
         </div>
+        <div class="float-right">
+          <social-share
+            description="Game developers need better tooling"
+          ></social-share>
+        </div>
       </div>
     </section>
   </div>
@@ -133,8 +138,13 @@
 
 <script lang="ts">
 import { Component, Vue } from "nuxt-property-decorator"
+import SocialShare from '~/components/SocialShare.vue';
 
-@Component
+@Component({
+  components: {
+    SocialShare,
+  },
+})
 export default class BlogWebiteOnline extends Vue {
   public head () {
     return {
