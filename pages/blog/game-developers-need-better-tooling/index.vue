@@ -58,12 +58,12 @@
           <h2 class="text-semi-bold text-xl">
             My personal reason to start GameComponent
           </h2>
-          <p class="mt-2">
+          <p class="mt-2 text-grey-darkest">
             The idea for GameComponent started late 2018. As a fullstack developer I wanted to take a dive into game development.
             I used to do some game development during my teenage years however over time I transition more towards web development.
           </p>
 
-          <p class="mt-8">
+          <p class="mt-8 text-grey-darkest">
             Creating an online multiple players game is incredible hard and there are a lot of moving pieces.
             One thing that frustrated about game development is the fierce competition between studios.
             In the web development world a lot of companies and individuals collaborate to create awesome tech.
@@ -71,21 +71,21 @@
             It looks like everyone is reinventing the wheel, simply to beat each other to market.
           </p>
 
-          <p class="mt-8">
+          <p class="mt-8 text-grey-darkest">
             I wanted to create an inventory so players could hold onto items. Sounds simple right? With publishing platforms like Steam you get a wide variety of services.
             Yet all those services are only usable for the players on Steam. I don't want to tie my players to one specific platform.
             If I decided to go with Steam's inventory service I would have to reinvent the wheel multiple times for every platform I want to release my game on.
           </p>
 
           <h2 class="text-semi-bold text-xl mt-8">The economy service</h2>
-          <p class="mt-2">
+          <p class="mt-2 text-grey-darkest">
             That's when we decided to focus on creating an inventory service. After a while we renamed it to economy service.
             Simply because it's not just about items but also about virtual currencies and shops.
             I want the economy service to be a developer centered tool, if the service lacks a feature a developer should be able to edit the service to get that feature in.
             A lot of closed source competitors don't allow this. So if their service lacks a feature you will have to work around it.
           </p>
 
-          <p class="mt-8">
+          <p class="mt-8 text-grey-darkest">
             For the foreseeable future will put our efforts into creating the best economy service possible.
             Later on we will branch into other services.
             You can expect more blog posts in the future.
@@ -95,13 +95,12 @@
           <h2 class="text-semi-bold text-xl mt-8">
             Website now available online
           </h2>
-          <p class="mt-2">
+          <p class="mt-2 text-grey-darkest">
             The last month we have been working hard to create this website.
             It is still miles away from being perfect.
             But for now it serves it's purpose.
             This website will function as a hub for development around GameComponent's services.
           </p>
-
 
           <div class="pt-16 uppercase text-xs font-bold text-grey-dark leading-normal">
             WRITTEN ON APR 5, 2019
