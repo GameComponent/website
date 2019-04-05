@@ -33,7 +33,7 @@
           </nuxt-link>
 
           <div class="text-grey-darker leading-normal mt-2">
-            by <a href="https://nielslanting.nl" target="_blank" class="no-underline text-blue">Niels Lanting</a> on Apr 4, 2019
+            by <a href="https://nielslanting.nl" target="_blank" class="no-underline text-blue">Niels Lanting</a> on Apr 5, 2019
           </div>
 
           <nuxt-link to="/blog/website-online" class="no-underline">
