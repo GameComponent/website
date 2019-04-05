@@ -59,6 +59,31 @@
               At the moment we do not provide a helm chart to easily run on Kubernetes. We will provide this once the service reaches more maturity.
             </p>
 
+            <div class="mt-8 bg-red-light rounded text-white p-8">
+              <div class="font-semibold text-xl">Warning!</div>
+              <div class="mt-2">
+                At the moment this project is in active development.
+                Do not use it in a production evironment.
+              </div>
+            </div>
+
+            <div class="mt-8 bg-grey-lighter rounded text-black p-8">
+              <div class="mt-4">
+                If you are interested follow our Twitter to stay updated.
+              </div>
+
+              <div class="mt-2">
+                <a
+                  href="https://twitter.com/GameComponentHQ?ref_src=twsrc%5Etfw"
+                  class="twitter-follow-button"
+                  data-size="large"
+                  data-show-count="false"
+                  data-show-screen-name="false"
+                ></a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+            </div>
+
             <div class="uppercase text-xs font-bold text-grey-darker leading-normal mt-8" style="letter-spacing: 0.5px;">
               INSTALLING THE SERVICE
             </div>
