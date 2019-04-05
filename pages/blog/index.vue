@@ -26,9 +26,9 @@
             </span>
           </div>
 
-          <nuxt-link to="/blog/website-online" class="no-underline">
+          <nuxt-link to="/blog/game-developers-need-better-tooling" class="no-underline">
             <h2 class="text-black mt-4 text-2xl leading-tight">
-              Website now available online
+              Game developers need better tooling
             </h2>
           </nuxt-link>
 
@@ -36,10 +36,10 @@
             by <a href="https://nielslanting.nl" target="_blank" class="no-underline text-blue">Niels Lanting</a> on Apr 5, 2019
           </div>
 
-          <nuxt-link to="/blog/website-online" class="no-underline">
+          <nuxt-link to="/blog/game-developers-need-better-tooling" class="no-underline">
             <div class="w-full mt-8 h-64 rounded bg-blue-light background--test hover:scale"></div>
             <p class="mt-4 text-grey-darker">
-              There is still a lot of work in progress. But small steps will lead to big changes.
+              It looks like everyone is reinventing the wheel, simply to beat each other to market.
             </p>
           </nuxt-link>
         </div>
