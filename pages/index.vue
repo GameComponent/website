@@ -44,13 +44,13 @@
               Or to do complicated things like crafting and trading.
             </p>
             <div class="mt-8">
-              <a
-                href="https://github.com/GameComponent/economy-service"
+              <nuxt-link
+                to="/services/economy-service"
                 class="inline-block py-4 px-6 rounded-sm bg-green text-white no-underline font-medium text-sm hover:bg-green-light"
                 style="letter-spacing: 0.3px;"
               >
                 Read more
-              </a>
+              </nuxt-link>
             </div>
           </div>
         </div>
