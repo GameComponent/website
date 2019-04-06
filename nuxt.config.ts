@@ -28,7 +28,10 @@ const config: NuxtConfiguration = {
     "vue-github-buttons/nuxt",
     ['@nuxtjs/google-tag-manager', { id: 'GTM-WPLNL89' }],
   ],
-  axios: {}
+  axios: {},
+  generate: {
+    routes: ['404'],
+  },
 }
 
 export default config
