@@ -21,13 +21,13 @@
 
         <div class="mt-8">
           <div class="md:inline-block">
-            <a
-              href="/services/economy-service"
+            <nuxt-link
+              to="/services/economy-service"
               class="inline-block py-4 px-6 rounded-sm bg-blue text-white no-underline font-medium text-sm hover:bg-blue-light"
               style="letter-spacing: 0.3px;"
             >
               Check out the economy service
-            </a>
+            </nuxt-link>
           </div>
           <!-- <div class="mt-2 md:mt-0 md:inline-block md:ml-4">
             <a
