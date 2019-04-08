@@ -3,6 +3,16 @@
     background-image: linear-gradient(90deg, #eef5eb, #cbfdcb)
   }
 
+  .background--grid {
+    background-image: url('~assets/img/grid_large_light.png');
+    background-color: #d4d5d6;
+  }
+
+  .background--dots {
+    background: linear-gradient(90deg, #FFF 20px, transparent 1%) center, linear-gradient(#FFF 20px, transparent 1%) center, #CCC;
+    background-size: 22px 22px;
+  }
+
   @media (min-width: 992px) {
     .hover\:scale:hover {
       transform: scale(1.02);
@@ -166,6 +176,51 @@
               We don't just provide technical tools, your entire team can easily make us of our services.
             </p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="text-center table container bg-white mx-auto rounded pt-16 lg:pt-32">
+        <div class="px-8">
+          <h2 class="text-black text-4xl leading-tight">
+            Virtual currencies
+          </h2>
+          <p class="mt-4 text-grey-darker mt-4 text-xl leading-normal">
+            You can easily create a virtual currency and reward your players with it.
+          </p>
+        </div>
+      </div>
+
+      <div class="table container bg-white mx-auto rounded mb-16 md:flex pt-8 lg:pt-16">
+        <div class="w-full md:px-8 lg:px-16 lg:w-1/2 flex justify-center items-center background--dots">
+          <img src="~assets/animated/example_currency.svg" alt="" style="width: 24rem;">
+        </div>
+        <div class="w-full lg:w-1/2 px-4 md:px-0 md:pl-0 md:pl-8 lg:pl-16 relative">
+          <div class="absolute pin-r pin-b mr-2 mb-2 px-4 md:px-0">
+            <nuxt-link
+              to="/developers/economy-service"
+              class="inline-block py-2 px-3 rounded-sm bg-green-dark text-white no-underline font-medium text-sm hover:bg-green"
+              style="letter-spacing: 0.3px;"
+            >
+              Go to documentation
+            </nuxt-link>
+          </div>
+          <pre class="mt-8 lg:mt-0 bg-grey-lighter p-4 md:p-8 rounded text-grey-darker text-xs md:text-base">
+1  // 1. Create a currency
+2  <span class="text-blue-dark">economyService</span>.<span class="text-green-dark">createCurrency</span>({
+3    <span class="text-black">name</span>: <span class="text-pink-dark">'dollar'</span>,
+4    <span class="text-black">short_name</span>: <span class="text-pink-dark">'USD'</span>,
+5    <span class="text-black">symbol</span>: <span class="text-pink-dark">'$'</span>,
+6  });
+7
+8  // 2. Give to player
+9  <span class="text-blue-dark">economyService</span>.<span class="text-green-dark">giveCurrency</span>({
+10   <span class="text-black">storage_id</span>: <span class="text-pink-dark">'alien_inventory'</span>,
+11   <span class="text-black">currency_id</span>: <span class="text-pink-dark">'dollar'</span>,
+12   <span class="text-black">amount</span>: <span class="text-pink-dark">'1000'</span>,
+13 })
+          </pre>
         </div>
       </div>
     </section>
