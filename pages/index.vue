@@ -71,7 +71,9 @@
               Vendor lock free
             </h3>
             <p class="mt-2 text-grey-darkest leading-normal">
-              You can host your own services. We don't have any proprietary code we run the same code that you run on.
+              You can host all services on your own metal.
+              We don't have any closed source code.
+              We run the same code that you run on.
             </p>
           </div>
         </div>
@@ -88,7 +90,8 @@
               Scalable
             </h3>
             <p class="mt-2 text-grey-darkest leading-normal">
-              We use Cockroachdb as our default database. This is a distrubted database that allows for enormous scale and high availablilty.
+              We use Cockroachdb as our default database.
+              This is a distributed database that allows for enormous scale and high availablilty.
             </p>
           </div>
         </div>
@@ -105,7 +108,9 @@
               Extendable
             </h3>
             <p class="mt-2 text-grey-darkest leading-normal">
-              The code of our services is available on Github. No more hacking around a service, if you need this service to do magic you can program it to do magic.
+              The code of the services is available on GitGub.
+              No more black box magic.
+              Everything can be seen and modified.
             </p>
           </div>
         </div>
