@@ -14,9 +14,13 @@
   }
 
   @media (min-width: 992px) {
+    .hover\:scale {
+      transition: all .15s ease-in-out;
+      will-change: transition;
+    }
+
     .hover\:scale:hover {
-      transform: scale(1.02);
-      transition: .25s;
+      transform: scale(1.048);
     }
   }
 </style>
@@ -192,21 +196,18 @@
         </div>
       </div>
 
-      <div class="table container bg-white mx-auto rounded mb-16 md:flex pt-8 lg:pt-16">
+      <div class="table container bg-white mx-auto rounded mb-16 md:flex pt-8 lg:pt-16 px-4 md:px-0">
         <div class="w-full md:px-8 lg:px-16 lg:w-1/2 flex justify-center items-center background--dots">
-          <img src="~assets/animated/example_currency.svg" alt="" style="width: 24rem;">
+          <img
+            src="~assets/animated/example_currency.svg"
+            alt=""
+            style="width: 24rem;"
+            class="py-8"
+          >
         </div>
-        <div class="w-full lg:w-1/2 px-4 md:px-0 md:pl-0 md:pl-8 lg:pl-16 relative">
-          <div class="absolute pin-r pin-b mr-2 mb-2 px-4 md:px-0">
-            <nuxt-link
-              to="/developers/economy-service"
-              class="inline-block py-2 px-3 rounded-sm bg-green-dark text-white no-underline font-medium text-sm hover:bg-green"
-              style="letter-spacing: 0.3px;"
-            >
-              Go to documentation
-            </nuxt-link>
-          </div>
-          <pre class="mt-8 lg:mt-0 bg-grey-lighter p-4 md:p-8 rounded text-grey-darker text-xs md:text-base">
+
+        <div class="w-full lg:w-1/2 md:pl-0 md:pl-8 lg:pl-16">
+          <pre class="mt-8 lg:mt-0 bg-grey-lighter p-4 md:p-8 rounded text-grey-darker text-xs md:text-base relative">
 1  // 1. Create a currency
 2  <span class="text-blue-dark">economyService</span>.<span class="text-green-dark">createCurrency</span>({
 3    <span class="text-black">name</span>: <span class="text-pink-dark">'dollar'</span>,
@@ -220,6 +221,13 @@
 11   <span class="text-black">currency_id</span>: <span class="text-pink-dark">'dollar'</span>,
 12   <span class="text-black">amount</span>: <span class="text-pink-dark">'1000'</span>,
 13 })
+<div class="absolute pin-r pin-b mb-2 mr-2">
+<nuxt-link
+  to="/developers/economy-service"
+  class="inline-block py-2 px-3 rounded-sm bg-green-dark text-white no-underline font-medium text-sm hover:bg-green font-sans"
+  style="letter-spacing: 0.3px;"
+>Go to documentation</nuxt-link>
+</div>
           </pre>
         </div>
       </div>
