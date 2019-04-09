@@ -148,7 +148,7 @@ import SocialShare from '~/components/SocialShare.vue';
     SocialShare,
   },
 })
-export default class BlogWebiteOnline extends Vue {
+export default class BlogItem extends Vue {
   public head () {
     return {
       title: 'GameComponent - Game developers need better tooling'
