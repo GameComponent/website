@@ -9,7 +9,7 @@ const config: NuxtConfiguration = {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "GameComponent software services for your online game. Don't reinvent the wheel, use small and powerful services to power your game." }
+      { hid: "description", name: "description", content: "GameComponent provides software services for your online game. Don't reinvent the wheel, use small and powerful services to power your game." }
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }
