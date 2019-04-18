@@ -147,7 +147,7 @@
   }
 
   .dropdown__item--services {
-    width: 360px;
+    width: 380px;
   }
 
   .dropdown__item--developers {
