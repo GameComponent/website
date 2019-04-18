@@ -1,9 +1,17 @@
 <style scoped>
-  .background--test {
+  .background--game-developers-need-better-tooling {
     background-image: url('~assets/blog/website-live/thumbnail.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
+  }
+
+  .background--kubernetes-the-platform-for-modern-multiplayer-games {
+    background-color: #eef9df;
+    background-image: url('~assets/blog/kubernetes-the-platform-for-modern-multiplayer-games/thumbnail.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
   }
 
   @media (min-width: 992px) {
@@ -34,11 +42,11 @@
             </nuxt-link>
 
             <div class="text-grey-darker leading-normal mt-2">
-              by <a href="https://nielslanting.nl" target="_blank" class="no-underline text-blue">Niels Lanting</a> on Apr 6, 2019
+              by <a href="https://nielslanting.nl" target="_blank" class="no-underline text-blue">Niels Lanting</a> on Apr 18, 2019
             </div>
 
             <nuxt-link to="/blog/kubernetes-the-platform-for-modern-multiplayer-games" class="no-underline">
-              <div class="w-full mt-8 h-64 rounded bg-green-light background--test hover:scale"></div>
+              <div class="w-full mt-8 h-64 rounded background--kubernetes-the-platform-for-modern-multiplayer-games hover:scale"></div>
               <p class="mt-4 text-grey-darker pb-16">
                 Are you not yet running a cloud native game system?
               </p>
@@ -64,7 +72,7 @@
             </div>
 
             <nuxt-link to="/blog/kubernetes-the-platform-for-modern-multiplayer-games" class="no-underline">
-              <div class="w-full mt-8 h-64 rounded bg-blue-light background--test hover:scale"></div>
+              <div class="w-full mt-8 h-64 rounded bg-blue-light background--game-developers-need-better-tooling hover:scale"></div>
               <p class="mt-4 text-grey-darker pb-16">
                 It looks like everyone is reinventing the wheel, simply to beat each other to market.
               </p>
