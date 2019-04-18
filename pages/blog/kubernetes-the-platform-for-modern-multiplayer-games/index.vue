@@ -68,6 +68,18 @@
             Instead of focussing on our own services we would like to highlight some awesome open source technologies that leverage Kubernetes and Docker. These technologies mark the starting point of the game indestry's adoption of open source and cloud native software.
           </p>
 
+          <img
+            src="~/assets/blog/kubernetes-the-platform-for-modern-multiplayer-games/gdc.jpg"
+            alt=""
+            class="mt-8"
+          >
+          <div class="text-xs">
+            <span class="float-left">Photo of the GDC conference.</span>
+            <a href="https://www.flickr.com/photos/46982319@N06/40944186361" class="float-right no-underline text-grey">
+              Source
+            </a>
+          </div>
+
           <p class="mt-8 text-grey-darkest">
             We have been actively following the development of two projects for a while. With the recent release of the 2019 GCD videos and Cloud Next videos we want to touch on these two projects. For people who are unfamiliar with GDC, it's the Game Development Conference a yearly game development conference held yearly in San Fransisco. (You might have seen GDC if you have watched the Stadia announcement). Cloud Next is a conference about Google's cloud developments.
           </p>
