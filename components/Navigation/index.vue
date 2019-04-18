@@ -316,7 +316,12 @@
                     class="block p-4 text-grey-darker no-underline"
                     style="padding-left: calc(2rem + 48px);"
                   >
-                    GRPC API Specification &#x1F5D7;
+                    GRPC API Specification
+                    <img
+                      src="@/assets/icons/icon-external-link.svg"
+                      alt=""
+                      class="align-middle w-3 h-3 inline-block"
+                    >
                   </a>
                 </div>
 
@@ -327,7 +332,12 @@
                     class="block p-4 text-grey-darker no-underline"
                     style="padding-left: calc(2rem + 48px);"
                   >
-                    REST API Specification &#x1F5D7;
+                    REST API Specification
+                    <img
+                      src="@/assets/icons/icon-external-link.svg"
+                      alt=""
+                      class="align-middle w-3 h-3 inline-block"
+                    >
                   </a>
                 </div>
               </div>
@@ -349,21 +359,42 @@
                 <div class="bg-grey-lightest hover:bg-grey-lighter rounded-t">
                   <a href="https://discord.gg/CPmb5N5" target="_blank" class="block p-4 text-grey-darker no-underline">
                     <img src="@/assets/social_icons/discord_dark.svg" alt="github" class="align-bottom w-6 h-6" />
-                    <span class="leading-normal ml-4">Discord &#x1F5D7;</span>
+                    <span class="leading-normal ml-4">
+                      Discord
+                      <img
+                        src="@/assets/icons/icon-external-link.svg"
+                        alt=""
+                        class="align-middle w-3 h-3 inline-block"
+                      >
+                    </span>
                   </a>
                 </div>
 
                 <div class="bg-grey-lightest hover:bg-grey-lighter">
                   <a href="https://twitter.com/GameComponentHQ" class="block p-4 text-grey-darker no-underline">
                     <img src="@/assets/social_icons/twitter_dark.svg" alt="github" class="align-bottom w-6 h-6" />
-                    <span class="leading-normal ml-4">Twitter &#x1F5D7;</span>
+                    <span class="leading-normal ml-4">
+                      Twitter
+                      <img
+                        src="@/assets/icons/icon-external-link.svg"
+                        alt=""
+                        class="align-middle w-3 h-3 inline-block"
+                      >
+                      </span>
                   </a>
                 </div>
 
                 <div class="bg-grey-lightest hover:bg-grey-lighter rounded-b">
                   <a href="https://github.com/GameComponent/economy-service" target="_blank" class="block p-4 text-grey-darker no-underline">
                     <img src="@/assets/social_icons/github_dark.svg" alt="github" class="align-bottom w-6 h-6" />
-                    <span class="leading-normal ml-4">Become a contributer &#x1F5D7;</span>
+                    <span class="leading-normal ml-4">
+                      Become a contributer
+                      <img
+                        src="@/assets/icons/icon-external-link.svg"
+                        alt=""
+                        class="align-middle w-3 h-3 inline-block"
+                      >
+                    </span>
                   </a>
                 </div>
               </div>
