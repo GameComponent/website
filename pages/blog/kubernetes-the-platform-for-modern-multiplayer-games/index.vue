@@ -57,7 +57,7 @@
           </h2>
 
           <p class="mt-2 text-grey-darkest">
-            The software industry is ever-changing, it is in constant flux with new technology is emerging every day. Over the last few years there has been a huge adoption of containers. With containers developers can run software in a standardized way making it easy to manage the software's dependencies.
+            The software industry is ever-changing, it is in constant flux with new technology emerging every day. Over the last few years there has been a huge adoption of containers. With containers developers can run software in a standardized way making it easy to manage the software's dependencies.
           </p>
 
           <p class="mt-8 text-grey-darkest">
