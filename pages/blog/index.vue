@@ -71,7 +71,7 @@
               by <a href="https://nielslanting.nl" target="_blank" class="no-underline text-blue">Niels Lanting</a> on Apr 5, 2019
             </div>
 
-            <nuxt-link to="/blog/kubernetes-the-platform-for-modern-multiplayer-games" class="no-underline">
+            <nuxt-link to="/blog/game-developers-need-better-tooling" class="no-underline">
               <div class="w-full mt-8 h-64 rounded bg-blue-light background--game-developers-need-better-tooling hover:scale"></div>
               <p class="mt-4 text-grey-darker pb-16">
                 It looks like everyone is reinventing the wheel, simply to beat each other to market.
