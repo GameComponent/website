@@ -20,7 +20,7 @@
           <img src="~assets/blog/website-live/thumbnail.svg" alt="">
         </div>
 
-        <div class="w-full md:w-2/3 pt-8 md:pt-0 md:float-left">
+        <div class="w-full md:w-2/3 pt-8 md:pt-0 md:float-left pb-8">
           <h1 class="text-black text-3xl lg:text-4xl w-128" style="letter-spacing: 0.5px;">
             Game developers need better tooling
           </h1>
@@ -33,8 +33,8 @@
 
     <section>
       <div class="container mx-auto md:clearfix">
-        <div class="h-12 pt-16 px-16 lg:px-32 uppercase text-xs font-bold text-grey-dark leading-normal">
-          <div class="px-8">
+        <div class="h-12 pt-16 px-8 lg:px-16 uppercase text-xs font-bold text-grey-dark leading-normal">
+          <div>
             <span style="letter-spacing: 0.5px;">
               <nuxt-link to="/blog" class="no-underline text-grey-dark hover:text-blue cursor-pointer">
                 BLOG
@@ -52,8 +52,8 @@
     </section>
 
     <section class="pt-16">
-      <div class="container mx-auto md:clearfix px-8 md:px-32 text-black text-lg leading-roomy">
-        <div class="md:px-8">
+      <div class="container mx-auto md:clearfix px-8 lg:px-16 text-black text-lg leading-roomy">
+        <div class="w-full lg:w-2/3 lg:float-left">
 
           <h2 class="text-semi-bold text-xl">
             My personal reason to start GameComponent
@@ -106,13 +106,36 @@
             WRITTEN ON APR 5, 2019
           </div>
         </div>
+
+        <div class="w-full lg:w-1/3 lg:float-left pt-8 lg:pt-0">
+          <div class="lg:pl-16">
+            <div class="bg-grey-lighter p-8 rounded">
+              <div class="text-black text-xl leading-tight">
+                Want to stay updated?
+              </div>
+              <div class="text-grey-darker leading-normal">
+                Follow us on Twitter
+              </div>
+              <div class="mt-4">
+                <a
+                  href="https://twitter.com/GameComponentHQ?ref_src=twsrc%5Etfw"
+                  class="twitter-follow-button"
+                  data-size="large"
+                  data-show-count="false"
+                  data-show-screen-name="false"
+                ></a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="pt-16 pb-32">
-      <div class="container mx-auto md:clearfix px-16 lg:px-32 lg:px-16 text-center md:text-left">
+      <div class="container mx-auto md:clearfix px-8 lg:px-16 text-center md:text-left">
         <div class=" w-full md:w-auto md:float-left clearfix">
-          <div class="w-full md:w-auto md:float-left md:ml-8">
+          <div class="w-full md:w-auto md:float-left">
             <img
               src="~assets/blog/people/niels_lanting.jpg"
               alt=""

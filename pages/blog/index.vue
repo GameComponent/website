@@ -81,7 +81,7 @@
         </div>
 
         <div class="w-full lg:w-1/3 lg:float-left">
-          <div class="pl-16">
+          <div class="lg:pl-16">
             <div class="bg-grey-lighter p-8 rounded">
               <div class="text-black text-xl leading-tight">
                 Want to stay updated?
