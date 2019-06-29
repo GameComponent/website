@@ -11,10 +11,16 @@
 }
 
 .resp-sharing-button {
-  border-radius: 5px;
+  border-radius: 100%;
   transition: 25ms ease-out;
   padding: 0.5em 0.75em;
-  font-family: Helvetica Neue,Helvetica,Arial,sans-serif
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 14px;
 }
 
 .resp-sharing-button__icon svg {
