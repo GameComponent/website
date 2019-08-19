@@ -63,7 +63,7 @@
               <div class="font-semibold text-xl">Warning!</div>
               <div class="mt-2">
                 At the moment this project is in active development.
-                Do not use it in a production evironment.
+                Do not use it in a production environment.
               </div>
             </div>
 
