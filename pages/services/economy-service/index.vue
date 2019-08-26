@@ -15,7 +15,28 @@
 }
 
 .player {
+  margin: auto;
+  max-width: 720px;
+  transform: translateY(-8rem);
+  text-emphasis: center;
+}
+
+.player__wrapper {
+  display: inline-block;
+  width: 100%;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.player__video {
   border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.12);
 }
 
 @media (min-width: 992px) {
@@ -33,8 +54,8 @@
 <template>
   <div>
     <section class="background--light-green">
-      <div class="container mx-auto pt-64 pb-64 px-8 lg:px-16 clearfix">
-        <div class="w-full text-center">
+      <div class="container mx-auto pt-32 pb-64 px-8 lg:px-16 clearfix">
+        <div class="w-full text-center lg:mt-8">
           <h1 class="text-black text-5xl w-128" style="letter-spacing: 0.5px;">Economy service</h1>
           <p class="text-grey-darker mt-8 text-xl leading-normal">
             Do you need items, virtual currencies and shops?
@@ -58,22 +79,25 @@
 
     <section>
       <div class="container bg-white mx-auto rounded clearfix">
-        <div class="text-center">
-          <iframe
-            class="player bg-black"
-            style="transform: translateY(-120px); box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.12);"
-            type="text/html"
-            width="720"
-            height="405"
-            src="https://www.youtube.com/embed/Z0jHSMOcheQ?showinfo=0&modestbranding=1&rel=0"
-            frameborder="0"
-          ></iframe>
+        <div class="text-center px-8">
+          <div class="player">
+            <div class="player__wrapper">
+              <iframe
+                class="player__video"
+                type="text/html"
+                width="720"
+                height="405"
+                src="https://www.youtube.com/embed/Z0jHSMOcheQ?showinfo=0&modestbranding=1&rel=0"
+                frameborder="0"
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section>
-      <div class="text-center table container bg-white mx-auto rounded pt-16 lg:pt-32">
+      <div class="text-center table container bg-white mx-auto rounded">
         <div class="px-8">
           <h2 class="text-black text-4xl leading-tight">Virtual currencies</h2>
           <p
