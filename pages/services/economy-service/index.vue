@@ -144,6 +144,22 @@
       </div>
     </section>
 
+    <section class="pt-32">
+      <div class="text-center table container bg-white mx-auto rounded">
+        <div class="px-8">
+          <h2 class="text-black text-4xl leading-tight">Blueprint support</h2>
+          <p
+            class="mt-4 text-grey-darker text-xl leading-normal"
+          >Our Unreal Engine 4 SDK does not just come with an integration for C++ it also comes with Blueprint support.</p>
+        </div>
+      </div>
+      <div class="text-center table container bg-white mx-auto rounded pt-16">
+        <div class="px-8">
+          <img src="@/assets/img/economy/blueprint.png" alt="Blueprint support" class="rounded" />
+        </div>
+      </div>
+    </section>
+
     <section class="pt-16 lg:pt-32">
       <div class="container mx-auto clearfix bg-grey-lightest px-8 py-16 rounded-sm">
         <div class="float-left w-full sm:w-1/2 lg:w-1/4 sm:pr-8 lg:p-8">
