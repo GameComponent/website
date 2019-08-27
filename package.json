@@ -22,7 +22,7 @@
   "devDependencies": {
     "@nuxt/typescript": "^2.5.1",
     "@nuxt/vue-app": "^2.5.1",
-    "@types/node": "10.14.4",
+    "@types/node": "12.7.2",
     "@types/webpack-env": "1.13.9"
   }
 }
