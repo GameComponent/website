@@ -39,30 +39,27 @@ export default class Dashboard extends Vue {
 
   public mounted() {
     /* eslint-disable */
-    var s = document.createElement("script");
-    s.type = "text/javascript";
-    s.async = true;
-    s.src = "https://cdn.xsolla.net/xsolla-login-widget/sdk/2.2.3/xl.min.js";
-    s.addEventListener(
-      "load",
-      function() {
-        XL.init({
-          projectId: "f495124c-c84d-11e9-9244-42010aa80004",
-          callbackUrl: `${window.location.origin}/dashboard/callback`,
-          locale: "en_XX"
-        });
+    const script = document.createElement("script");
+    script.type = "text/javascript";
+    script.async = true;
+    script.src =
+      "https://cdn.xsolla.net/xsolla-login-widget/sdk/2.2.3/xl.min.js";
+    script.onload = () => {
+      XL.init({
+        projectId: "f495124c-c84d-11e9-9244-42010aa80004",
+        callbackUrl: `${window.location.origin}/dashboard/callback`,
+        locale: "en_XX"
+      });
 
-        const element_id = "xl_auth";
-        const options = {
-          width: 550,
-          height: 550,
-          route: XL.ROUTES.LOGIN
-        };
+      XL.AuthWidget("xl_auth", {
+        width: 550,
+        height: 550,
+        route: XL.ROUTES.LOGIN
+      });
+    };
 
-        XL.AuthWidget(element_id, options);
-      },
-      false
-    );
+    const head = document.getElementsByTagName("head")[0];
+    head.appendChild(script);
     /* eslint-enable */
   }
 
