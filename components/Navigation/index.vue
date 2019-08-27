@@ -388,7 +388,7 @@
                   <a href="https://github.com/GameComponent/economy-service" target="_blank" class="block p-4 text-grey-darker no-underline">
                     <img src="@/assets/social_icons/github_dark.svg" alt="github" class="align-bottom w-6 h-6" />
                     <span class="leading-normal ml-4">
-                      Become a contributer
+                      Become a contributor
                       <img
                         src="@/assets/icons/icon-external-link.svg"
                         alt=""
