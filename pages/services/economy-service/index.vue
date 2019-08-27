@@ -39,6 +39,10 @@
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.12);
 }
 
+.shadow-xl {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.12);
+}
+
 @media (min-width: 992px) {
   .hover\:scale {
     transition: all 0.15s ease-in-out;
@@ -144,7 +148,7 @@
       </div>
     </section>
 
-    <section class="pt-32">
+    <section class="pt-16 lg:pt-32">
       <div class="text-center table container bg-white mx-auto rounded">
         <div class="px-8">
           <h2 class="text-black text-4xl leading-tight">Blueprint support</h2>
@@ -156,6 +160,26 @@
       <div class="text-center table container bg-white mx-auto rounded pt-16">
         <div class="px-8">
           <img src="@/assets/img/economy/blueprint.png" alt="Blueprint support" class="rounded" />
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-16 lg:pt-32">
+      <div class="text-center table container bg-white mx-auto rounded">
+        <div class="px-8">
+          <h2 class="text-black text-4xl leading-tight">Designer friendly webclient</h2>
+          <p
+            class="mt-4 text-grey-darker text-xl leading-normal"
+          >Gamedesigners can use the webclient to easily create items, currencies and much more.</p>
+        </div>
+      </div>
+      <div class="text-center table container bg-white mx-auto rounded pt-16">
+        <div class="px-8">
+          <img
+            src="@/assets/img/economy/screenshot.png"
+            alt="Blueprint support"
+            class="shadow-xl rounded"
+          />
         </div>
       </div>
     </section>
@@ -225,6 +249,26 @@
               class="mt-2 text-grey-darkest leading-normal"
             >We don't just provide technical tools, your entire team can easily make us of our services.</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-16 lg:pt-32">
+      <div class="text-center table container bg-white mx-auto rounded">
+        <div class="px-8">
+          <h2 class="text-black text-4xl leading-tight">Ready to get started?</h2>
+          <p
+            class="mt-4 text-grey-darker text-xl leading-normal"
+          >Use our managed service or the self hosted economy service to get started.</p>
+        </div>
+      </div>
+      <div class="text-center table container bg-white mx-auto rounded pt-16">
+        <div class="px-8">
+          <nuxt-link
+            to="/dashboard/register"
+            class="inline-block py-4 px-6 rounded-sm bg-blue text-white no-underline font-medium text-sm hover:bg-blue-light"
+            style="letter-spacing: 0.3px;"
+          >Sign up for free</nuxt-link>
         </div>
       </div>
     </section>
