@@ -39,31 +39,36 @@ export default class Dashboard extends Vue {
 
   public mounted() {
     /* eslint-disable */
-    XL.init({
-      projectId: "f495124c-c84d-11e9-9244-42010aa80004",
-      callbackUrl: "https://login.xsolla.com/api/blank",
-      locale: "en_XX"
-    });
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "https://cdn.xsolla.net/xsolla-login-widget/sdk/2.2.3/xl.min.js";
+    s.addEventListener(
+      "load",
+      function() {
+        XL.init({
+          projectId: "f495124c-c84d-11e9-9244-42010aa80004",
+          callbackUrl: "https://login.xsolla.com/api/blank",
+          locale: "en_XX"
+        });
 
-    const element_id = "xl_auth";
-    const options = {
-      width: 550,
-      height: 550,
-      route: XL.ROUTES.REGISTRATION
-    };
+        const element_id = "xl_auth";
+        const options = {
+          width: 550,
+          height: 550,
+          route: XL.ROUTES.REGISTRATION
+        };
 
-    XL.AuthWidget(element_id, options);
+        XL.AuthWidget(element_id, options);
+      },
+      false
+    );
     /* eslint-enable */
   }
 
   public head() {
     return {
-      title: "GameComponent - Register",
-      script: [
-        {
-          src: "https://cdn.xsolla.net/xsolla-login-widget/sdk/2.2.3/xl.min.js"
-        }
-      ]
+      title: "GameComponent - Register"
     };
   }
 }
