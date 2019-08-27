@@ -63,10 +63,10 @@
           </p>
           <div class="mt-8">
             <nuxt-link
-              to="/developers/economy-service/installation"
+              to="/dashboard/register"
               class="inline-block py-4 px-6 rounded-sm bg-green text-white no-underline font-medium text-sm hover:bg-green-light"
               style="letter-spacing: 0.3px;"
-            >Installation guide</nuxt-link>
+            >Sign up for free</nuxt-link>
             <nuxt-link
               to="/developers/economy-service"
               class="mt-2 sm:mt-0 inline-block py-4 px-6 rounded-sm bg-grey-darker text-white no-underline font-medium text-sm hover:bg-grey-dark"

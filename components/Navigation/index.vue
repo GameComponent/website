@@ -36,7 +36,7 @@
   background: white;
   will-change: width, height, transform;
   text-align: left;
-  transition: .15s;
+  transition: 0.15s;
 }
 
 .dropdown__items {
@@ -49,6 +49,14 @@
   width: 100%;
 }
 
+.navigation__item:first-child {
+  padding-left: 0px;
+}
+
+.navigation__item:last-child {
+  padding-right: 0px;
+}
+
 @media only screen and (min-width: 1000px) {
   .navigation {
     display: inline-block;
@@ -56,7 +64,9 @@
 
   .navigation__item {
     display: inline-block;
-    padding: 30px;
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .dropdown {
@@ -92,7 +102,7 @@
   }
 
   .dropdown__content::before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 100%;
     left: 50%;
@@ -115,7 +125,8 @@
     -webkit-transition: width 0.25s, height 0.25s, -webkit-transform 0.25s;
     transition: width 0.25s, height 0.25s, -webkit-transform 0.25s;
     transition: transform 0.25s, width 0.25s, height 0.25s;
-    transition: transform 0.25s, width 0.25s, height 0.25s, -webkit-transform 0.25s;
+    transition: transform 0.25s, width 0.25s, height 0.25s,
+      -webkit-transform 0.25s;
   }
   .dropdown__content--visible::before {
     opacity: 1;
@@ -170,20 +181,13 @@
   >
     <div class="container mx-auto px-8 lg:px-16 clearfix">
       <nuxt-link to="/" class="header__logo float-left">
-        <img
-          src="@/assets/img/logo.svg"
-          alt="GAMECOMPONENT"
-          class="navigation__logo w-64 py-4"
-        />
+        <img src="@/assets/img/logo.svg" alt="GAMECOMPONENT" class="navigation__logo w-64 py-4" />
       </nuxt-link>
 
-      <hamburger
-        :open="open"
-        @click="onClickHamburger"
-      />
+      <hamburger :open="open" @click="onClickHamburger" />
 
       <nav class="navigation float-right">
-        <ul>
+        <ul class="navigation_wrapper">
           <li
             ref="firstItem"
             class="navigation__item has-dropdown"
@@ -195,9 +199,7 @@
               to="/services"
               class="font-medium no-underline text-black hover:text-blue"
               :class="{ 'text-blue': active === 'services' }"
-            >
-              Services
-            </nuxt-link>
+            >Services</nuxt-link>
           </li>
 
           <li
@@ -210,9 +212,7 @@
               to="/developers"
               class="font-medium no-underline text-black hover:text-blue"
               :class="{ 'text-blue': active === 'developers' }"
-            >
-              Developers
-            </nuxt-link>
+            >Developers</nuxt-link>
           </li>
 
           <li
@@ -225,21 +225,18 @@
               to="/community"
               class="font-medium no-underline text-black hover:text-blue"
               :class="{ 'text-blue': active === 'community' }"
-            >
-              Community
-            </nuxt-link>
+            >Community</nuxt-link>
           </li>
 
-          <li
-            class="navigation__item has-dropdown links"
-            @mouseenter="onMouseEnterItem"
-          >
+          <li class="navigation__item has-dropdown links" @mouseenter="onMouseEnterItem">
+            <nuxt-link to="/blog" class="font-medium no-underline text-black hover:text-blue">Blog</nuxt-link>
+          </li>
+
+          <li class="navigation__item has-dropdown links" @mouseenter="onMouseEnterItem">
             <nuxt-link
-              to="/blog"
-              class="font-medium no-underline text-black hover:text-blue"
-            >
-              Blog
-            </nuxt-link>
+              to="/dashboard"
+              class="font-medium no-underline bg-blue-darker text-white px-2 p-1 rounded hover:text-near-white hover:bg-blue-dark"
+            >Dashboard</nuxt-link>
           </li>
         </ul>
       </nav>
@@ -265,25 +262,31 @@
               :class="{ 'dropdown__item--active': active === 'services' }"
             >
               <div class="content">
-                <nuxt-link to="/services/economy-service" class="block clearfix p-4 hover:bg-grey-lighter rounded-t">
+                <nuxt-link
+                  to="/services/economy-service"
+                  class="block clearfix p-4 hover:bg-grey-lighter rounded-t"
+                >
                   <div class="float-left">
                     <img
                       src="@/assets/icons/icon-currency-dollar.svg"
-                      alt=""
+                      alt
                       class="bg-green-lighter p-3 rounded-full"
                       style="width: 48px; height: 48px"
-                    >
+                    />
                   </div>
                   <div class="float-left ml-4 mt-1">
                     <div class="font-bold text-black">Economy service</div>
-                    <div class="text-xs text-grey-darker">Everything related to items, currencies and shops</div>
+                    <div
+                      class="text-xs text-grey-darker"
+                    >Everything related to items, currencies and shops</div>
                   </div>
                 </nuxt-link>
 
                 <div class="bg-grey-lightest hover:bg-grey-lighter rounded-b hidden lg:block">
-                  <a href="/services" class="text-center block p-4 text-grey-darker no-underline">
-                    View all services
-                  </a>
+                  <a
+                    href="/services"
+                    class="text-center block p-4 text-grey-darker no-underline"
+                  >View all services</a>
                 </div>
               </div>
             </li>
@@ -294,14 +297,17 @@
               :class="{ 'dropdown__item--active': active === 'developers' }"
             >
               <div class="content">
-                <nuxt-link to="/developers/economy-service" class="block clearfix p-4 hover:bg-grey-lighter rounded-t">
+                <nuxt-link
+                  to="/developers/economy-service"
+                  class="block clearfix p-4 hover:bg-grey-lighter rounded-t"
+                >
                   <div class="float-left">
                     <img
                       src="@/assets/icons/icon-information.svg"
-                      alt=""
+                      alt
                       class="bg-blue-lighter p-3 rounded-full"
                       style="width: 48px; height: 48px"
-                    >
+                    />
                   </div>
                   <div class="float-left ml-4 mt-1">
                     <div class="font-bold text-black">Documentation</div>
@@ -319,9 +325,9 @@
                     GRPC API Specification
                     <img
                       src="@/assets/icons/icon-external-link.svg"
-                      alt=""
+                      alt
                       class="align-middle w-3 h-3 inline-block"
-                    >
+                    />
                   </a>
                 </div>
 
@@ -335,9 +341,9 @@
                     REST API Specification
                     <img
                       src="@/assets/icons/icon-external-link.svg"
-                      alt=""
+                      alt
                       class="align-middle w-3 h-3 inline-block"
-                    >
+                    />
                   </a>
                 </div>
               </div>
@@ -351,49 +357,72 @@
               <div class="content">
                 <div class="hover:bg-grey-lighter rounded-t">
                   <nuxt-link to="/community" class="block p-4 text-grey-darker no-underline">
-                    <img src="@/assets/icons/icon-group.svg" alt="" class="align-bottom w-6 h-6" />
+                    <img src="@/assets/icons/icon-group.svg" alt class="align-bottom w-6 h-6" />
                     <span class="leading-normal ml-4">View all channels</span>
                   </nuxt-link>
                 </div>
 
                 <div class="bg-grey-lightest hover:bg-grey-lighter rounded-t">
-                  <a href="https://discord.gg/CPmb5N5" target="_blank" class="block p-4 text-grey-darker no-underline">
-                    <img src="@/assets/social_icons/discord_dark.svg" alt="github" class="align-bottom w-6 h-6" />
+                  <a
+                    href="https://discord.gg/CPmb5N5"
+                    target="_blank"
+                    class="block p-4 text-grey-darker no-underline"
+                  >
+                    <img
+                      src="@/assets/social_icons/discord_dark.svg"
+                      alt="github"
+                      class="align-bottom w-6 h-6"
+                    />
                     <span class="leading-normal ml-4">
                       Discord
                       <img
                         src="@/assets/icons/icon-external-link.svg"
-                        alt=""
+                        alt
                         class="align-middle w-3 h-3 inline-block"
-                      >
+                      />
                     </span>
                   </a>
                 </div>
 
                 <div class="bg-grey-lightest hover:bg-grey-lighter">
-                  <a href="https://twitter.com/GameComponentHQ" class="block p-4 text-grey-darker no-underline">
-                    <img src="@/assets/social_icons/twitter_dark.svg" alt="github" class="align-bottom w-6 h-6" />
+                  <a
+                    href="https://twitter.com/GameComponentHQ"
+                    class="block p-4 text-grey-darker no-underline"
+                  >
+                    <img
+                      src="@/assets/social_icons/twitter_dark.svg"
+                      alt="github"
+                      class="align-bottom w-6 h-6"
+                    />
                     <span class="leading-normal ml-4">
                       Twitter
                       <img
                         src="@/assets/icons/icon-external-link.svg"
-                        alt=""
+                        alt
                         class="align-middle w-3 h-3 inline-block"
-                      >
-                      </span>
+                      />
+                    </span>
                   </a>
                 </div>
 
                 <div class="bg-grey-lightest hover:bg-grey-lighter rounded-b">
-                  <a href="https://github.com/GameComponent/economy-service" target="_blank" class="block p-4 text-grey-darker no-underline">
-                    <img src="@/assets/social_icons/github_dark.svg" alt="github" class="align-bottom w-6 h-6" />
+                  <a
+                    href="https://github.com/GameComponent/economy-service"
+                    target="_blank"
+                    class="block p-4 text-grey-darker no-underline"
+                  >
+                    <img
+                      src="@/assets/social_icons/github_dark.svg"
+                      alt="github"
+                      class="align-bottom w-6 h-6"
+                    />
                     <span class="leading-normal ml-4">
                       Become a contributor
                       <img
                         src="@/assets/icons/icon-external-link.svg"
-                        alt=""
+                        alt
                         class="align-middle w-3 h-3 inline-block"
-                      >
+                      />
                     </span>
                   </a>
                 </div>
@@ -407,27 +436,23 @@
 </template>
 
 <script lang="ts">
-import {
-  Component,
-  Vue,
-  Watch,
-} from "nuxt-property-decorator"
-import Hamburger from "./components/Hamburger.vue"
+import { Component, Vue, Watch } from "nuxt-property-decorator";
+import Hamburger from "./components/Hamburger.vue";
 
 @Component({
   components: {
-    Hamburger,
-  },
+    Hamburger
+  }
 })
 export default class Navigation extends Vue {
   open: Boolean = false;
 
-  active: String = '';
+  active: String = "";
 
   dropdownContentStyle: Object = {
-    width: '',
-    height: '',
-    transform: '',
+    width: "",
+    height: "",
+    transform: ""
   };
 
   public mounted() {
@@ -443,7 +468,7 @@ export default class Navigation extends Vue {
   }
 
   public onMouseLeaveItem(e) {
-    if (this.active === '') {
+    if (this.active === "") {
       this.hideDropdown();
     }
   }
@@ -459,60 +484,60 @@ export default class Navigation extends Vue {
   }
 
   public hideDropdown() {
-    this.active = '';
+    this.active = "";
     this.dropdownContentStyle = {
       ...this.dropdownContentStyle,
-      height: '0px',
-      opacity: 0,
-    }
+      height: "0px",
+      opacity: 0
+    };
     this.open = false;
   }
 
   public updateDropdown(selectedItem) {
-    const selectedDropdown: Element | null = (<Element>this.$refs.dropdown).querySelector(
-      `#${selectedItem.dataset.content}`
-    );
+    const selectedDropdown: Element | null = (<Element>(
+      this.$refs.dropdown
+    )).querySelector(`#${selectedItem.dataset.content}`);
 
     if (!selectedDropdown) {
       this.hideDropdown();
-
 
       return;
     }
 
     const height = selectedDropdown ? selectedDropdown.clientHeight : 0;
     const childNodes: any = selectedDropdown ? selectedDropdown.childNodes : [];
-    const elements: any = (selectedDropdown ? [...childNodes] : []);
+    const elements: any = selectedDropdown ? [...childNodes] : [];
 
-    const content = elements.find((item) => {
+    const content = elements.find(item => {
       if (!item) return false;
       if (!item.classList) return false;
       return item.classList.contains("content");
     });
     const width = content ? (<Element>content).clientWidth : 0;
-    const left = selectedItem.offsetLeft + (selectedItem.clientWidth / 2) - (width / 2);
+    const left =
+      selectedItem.offsetLeft + selectedItem.clientWidth / 2 - width / 2;
 
     this.dropdownContentStyle = {
       width: `${width}px`,
       height: `${height}px`,
-      transform: `translateX(${left}px)`,
+      transform: `translateX(${left}px)`
     };
   }
 
   public reset() {
     this.dropdownContentStyle = {
-      width: '',
-      height: '',
-      transform: '',
+      width: "",
+      height: "",
+      transform: ""
     };
   }
 
-  @Watch('$route')
+  @Watch("$route")
   onRouteChange(newRoute, oldRoute) {
-    if (newRoute.hash === '#0' && oldRoute.hash === '') return;
+    if (newRoute.hash === "#0" && oldRoute.hash === "") return;
 
     this.open = false;
-    this.active = '';
+    this.active = "";
   }
-};
+}
 </script>
