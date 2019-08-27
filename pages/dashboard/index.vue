@@ -48,7 +48,7 @@ export default class Dashboard extends Vue {
       function() {
         XL.init({
           projectId: "f495124c-c84d-11e9-9244-42010aa80004",
-          callbackUrl: "https://login.xsolla.com/api/blank",
+          callbackUrl: `${window.location.origin}/dashboard/callback`,
           locale: "en_XX"
         });
 
