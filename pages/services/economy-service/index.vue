@@ -282,7 +282,7 @@
         >Why should I choose your system instead of the others on the Unity/Unreal store?</p>
         <p
           class="mt-2 leading-normal max-w-lg"
-        >Most of the plugins you see on the Unity or Unreal store that deal with inventories/economies don't deal with the persistence part. This is almost always something you will have to implement yourself. This service setup in a generic way that allows it to be used in conjuction with those plugins.</p>
+        >Most of the plugins you see on the Unity or Unreal store that deal with inventories/economies don't deal with the persistence part. This is almost always something you will have to implement yourself. This service is setup in a generic way that allows it to be used in conjuction with those plugins.</p>
       </div>
 
       <div class="text-left table container bg-white mx-auto rounded mt-8 px-8 lg:px-16">
