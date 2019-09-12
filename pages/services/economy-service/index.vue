@@ -255,7 +255,7 @@
       </div>
     </section>
 
-    <section class="py-16 lg:py-32">
+    <section class="pt-16 lg:pt-32">
       <div class="text-left table container bg-white mx-auto rounded px-8 lg:px-16">
         <h2 class="text-black text-4xl leading-tight">FAQ</h2>
       </div>
