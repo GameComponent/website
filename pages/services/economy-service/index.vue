@@ -60,22 +60,24 @@
     <section class="background--light-green">
       <div class="container mx-auto pt-32 pb-64 px-8 lg:px-16 clearfix">
         <div class="w-full text-center lg:mt-8">
-          <h1 class="text-black text-5xl w-128" style="letter-spacing: 0.5px;">Economy service</h1>
-          <p class="text-grey-darker mt-8 text-xl leading-normal">
-            Do you need items, virtual currencies and shops?
-            <br />This service is for you.
-          </p>
-          <div class="mt-8">
-            <nuxt-link
-              to="/dashboard/register"
-              class="inline-block py-4 px-6 rounded-sm bg-green text-white no-underline font-medium text-sm hover:bg-green-light"
-              style="letter-spacing: 0.3px;"
-            >Sign up for free</nuxt-link>
-            <nuxt-link
-              to="/developers/economy-service"
-              class="mt-2 sm:mt-0 inline-block py-4 px-6 rounded-sm bg-grey-darker text-white no-underline font-medium text-sm hover:bg-grey-dark"
-              style="letter-spacing: 0.3px;"
-            >Documentation</nuxt-link>
+          <div class="m-auto max-w-lg">
+            <h1 class="text-black text-5xl w-128" style="letter-spacing: 0.5px;">Economy service</h1>
+            <p class="text-grey-darker mt-8 text-xl leading-normal">
+              This service powers your game's items, virtual currencies and shops.
+              <br />Implement complex systems like player trading with ease.
+            </p>
+            <div class="mt-8">
+              <nuxt-link
+                to="/dashboard/register"
+                class="inline-block py-4 px-6 rounded-sm bg-green text-white no-underline font-medium text-sm hover:bg-green-light"
+                style="letter-spacing: 0.3px;"
+              >Sign up for free</nuxt-link>
+              <nuxt-link
+                to="/developers/economy-service"
+                class="mt-2 sm:mt-0 inline-block py-4 px-6 rounded-sm bg-grey-darker text-white no-underline font-medium text-sm hover:bg-grey-dark"
+                style="letter-spacing: 0.3px;"
+              >Documentation</nuxt-link>
+            </div>
           </div>
         </div>
       </div>
@@ -101,6 +103,26 @@
     </section>
 
     <section>
+      <div class="text-center table container bg-white mx-auto rounded">
+        <div class="px-8">
+          <h2 class="text-black text-4xl leading-tight">Designer friendly webclient</h2>
+          <p
+            class="mt-4 text-grey-darker text-xl leading-normal"
+          >Gamedesigners can use the webclient to easily create items, currencies and much more.</p>
+        </div>
+      </div>
+      <div class="text-center table container bg-white mx-auto rounded pt-16">
+        <div class="px-8">
+          <img
+            src="@/assets/img/economy/screenshot.png"
+            alt="Blueprint support"
+            class="shadow-xl rounded"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-16 lg:pt-32">
       <div class="text-center table container bg-white mx-auto rounded">
         <div class="px-8">
           <h2 class="text-black text-4xl leading-tight">Virtual currencies</h2>
@@ -160,26 +182,6 @@
       <div class="text-center table container bg-white mx-auto rounded pt-16">
         <div class="px-8">
           <img src="@/assets/img/economy/blueprint.png" alt="Blueprint support" class="rounded" />
-        </div>
-      </div>
-    </section>
-
-    <section class="pt-16 lg:pt-32">
-      <div class="text-center table container bg-white mx-auto rounded">
-        <div class="px-8">
-          <h2 class="text-black text-4xl leading-tight">Designer friendly webclient</h2>
-          <p
-            class="mt-4 text-grey-darker text-xl leading-normal"
-          >Gamedesigners can use the webclient to easily create items, currencies and much more.</p>
-        </div>
-      </div>
-      <div class="text-center table container bg-white mx-auto rounded pt-16">
-        <div class="px-8">
-          <img
-            src="@/assets/img/economy/screenshot.png"
-            alt="Blueprint support"
-            class="shadow-xl rounded"
-          />
         </div>
       </div>
     </section>
@@ -253,6 +255,53 @@
       </div>
     </section>
 
+    <section class="py-16 lg:py-32">
+      <div class="text-left table container bg-white mx-auto rounded px-8 lg:px-16">
+        <h2 class="text-black text-4xl leading-tight">FAQ</h2>
+      </div>
+
+      <div class="text-left table container bg-white mx-auto rounded mt-8 px-8 lg:px-16">
+        <p class="text-grey-darker text-xl leading-normal">When should I use this service?</p>
+        <p
+          class="mt-2 leading-normal max-w-lg"
+        >This service is specifically tailored towards people who are developing an online game. It deals with persistence so it can deal with the items and currencies the player owns, even after logging in and out. It is not meant to be used for session based games(games where the item only exist for the duration of a single match). If you are not sure if you should use this service for your game you can reach out over email or join the Discord server.</p>
+      </div>
+
+      <div class="text-left table container bg-white mx-auto rounded mt-8 px-8 lg:px-16">
+        <p
+          class="text-grey-darker text-xl leading-normal"
+        >Why would I use this instead of creating my own system?</p>
+        <p
+          class="mt-2 leading-normal max-w-lg"
+        >For the same reason you would use a game engine. It saves time, you can build from a solid foundation and most importantly you can focus on building your game.</p>
+      </div>
+
+      <div class="text-left table container bg-white mx-auto rounded mt-8 px-8 lg:px-16">
+        <p
+          class="text-grey-darker text-xl leading-normal"
+        >Why should I choose your system instead of the others on the Unity/Unreal store?</p>
+        <p
+          class="mt-2 leading-normal max-w-lg"
+        >Most of the plugins you see on the Unity or Unreal store that deal with inventories/economies don't deal with the persistence part. This is almost always something you will have to implement yourself. This service setup in a generic way that allows it to be used in conjuction with those plugins.</p>
+      </div>
+
+      <div class="text-left table container bg-white mx-auto rounded mt-8 px-8 lg:px-16">
+        <p class="text-grey-darker text-xl leading-normal">How do I use it in my game?</p>
+        <p
+          class="mt-2 leading-normal max-w-lg"
+        >This service comes with SDKs/Plugins for various programming languages and game engine, this allows for easy integration. The service itself can be hosted on any type of server. We recommend running it in a Kubernetes cluster, for more details check out the documentation.</p>
+      </div>
+
+      <div class="text-left table container bg-white mx-auto rounded mt-8 px-8 lg:px-16">
+        <p
+          class="text-grey-darker text-xl leading-normal"
+        >I am not sure if this is a fit for the game I am building, what should I do?</p>
+        <p
+          class="mt-2 leading-normal max-w-lg"
+        >We have a Discord channel where you can ask questions, we will gladly help you. This service is setup in a very generic way to support as many games as possible, if your game's usecases don't really match with this service you can always dive into the source code and change however you want to.</p>
+      </div>
+    </section>
+
     <section class="pt-16 lg:pt-32">
       <div class="text-center table container bg-white mx-auto rounded">
         <div class="px-8">
@@ -300,7 +349,7 @@
         <div
           class="w-full md:w-1/2 md:flex md:justify-center md:items-center bg-green-lighter hover:scale"
         >
-          <div class="px-8 py-16 lg:px-16 gitlg:py-32">
+          <div class="px-8 py-16 lg:px-16 lg:py-32">
             <span
               class="uppercase text-xs font-bold text-grey-darker leading-normal"
               style="letter-spacing: 0.5px;"
