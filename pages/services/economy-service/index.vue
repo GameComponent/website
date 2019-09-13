@@ -255,7 +255,7 @@
       </div>
     </section>
 
-    <section class="pt-16 lg:pt-32">
+    <section class="pt-16 lg:ptnpm-32">
       <div class="text-left table container bg-white mx-auto rounded px-8 lg:px-16">
         <h2 class="text-black text-4xl leading-tight">FAQ</h2>
       </div>
@@ -289,7 +289,7 @@
         <p class="text-grey-darker text-xl leading-normal">How do I use it in my game?</p>
         <p
           class="mt-2 leading-normal max-w-lg"
-        >This service comes with SDKs/Plugins for various programming languages and game engine, this allows for easy integration. The service itself can be hosted on any type of server. We recommend running it in a Kubernetes cluster, for more details check out the documentation.</p>
+        >This service comes with SDKs/Plugins for various programming languages and game engines, this allows for easy integration. The service itself can be hosted on any type of server. We recommend running it in a Kubernetes cluster, for more details check out the documentation.</p>
       </div>
 
       <div class="text-left table container bg-white mx-auto rounded mt-8 px-8 lg:px-16">
