@@ -121,8 +121,7 @@ import SocialShare from "~/components/SocialShare.vue";
 export default class BlogItem extends Vue {
   public head() {
     return {
-      title:
-        "GameComponent - Kubernetes the platform for modern multiplayer games"
+      title: "GameComponent - Agones releases stable 1.0"
     };
   }
 }
