@@ -1,73 +1,57 @@
 <style scoped>
-  .background--light-blue {
-    background-image: linear-gradient(-90deg, #b3f1ff, #cff5fe);
-  }
+.background--light-blue {
+  background-image: linear-gradient(-90deg, #b3f1ff, #cff5fe);
+}
 
-  .background--test {
-    background-color: #b3f1ff;
-  }
+.background--test {
+  background-color: #b3f1ff;
+}
 
-  .text-shadow {
-    text-shadow: 0 2px 4px rgba(0,0,0,0.10);
-  }
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 </style>
 
 <template>
-  <div>
-    <section class="background--test bg-blue-light">
-      <div class="container mx-auto clearfix pt-16 lg:pt-32 pb-16 lg:pb-0 px-8 lg:px-16">
-        <div class="w-full md:w-1/3 md:float-right flex justify-center items-center">
-          <img src="~assets/blog/website-live/thumbnail.svg" alt="">
-        </div>
-
-        <div class="w-full md:w-2/3 pt-8 md:pt-0 md:float-left pb-8">
-          <h1 class="text-black text-3xl lg:text-4xl w-128" style="letter-spacing: 0.5px;">
-            Game developers need better tooling
-          </h1>
-          <p class="text-grey-darker mt-4 text-xl leading-normal">
-            It looks like everyone is reinventing the wheel, simply to beat each other to market.
-          </p>
-        </div>
-      </div>
-    </section>
-
+  <div class="container mx-auto px-8" style="margin-top: 160px; max-width: 800px;">
     <section>
-      <div class="container mx-auto md:clearfix">
-        <div class="h-12 pt-16 px-8 lg:px-16 uppercase text-xs font-bold text-grey-dark leading-normal">
-          <div>
-            <span style="letter-spacing: 0.5px;">
-              <nuxt-link to="/blog" class="no-underline text-grey-dark hover:text-blue cursor-pointer">
-                BLOG
-              </nuxt-link>
-            </span>
-            <span class="mx-2" style="letter-spacing: 0.5px;">
-              &rarr;
-            </span>
-            <span style="letter-spacing: 0.5px;">
-              THIS ARTICLE
-            </span>
-          </div>
+      <div
+        class="bg-blue-light background--test container mx-auto clearfix pt-16 md:pt-32 pb-16 lg:pb-0 mx-8 lg:mx-16 rounded-sm"
+      >
+        <div class="w-full flex justify-center items-center">
+          <img src="~assets/blog/website-live/thumbnail.svg" alt />
         </div>
       </div>
     </section>
 
     <section class="pt-16">
-      <div class="container mx-auto md:clearfix px-8 lg:px-16 text-black text-lg leading-roomy">
-        <div class="w-full lg:w-2/3 lg:float-left">
+      <div class="container mx-auto clearfix pb-16 lg:pb-0">
+        <div class="w-full pt-8 md:pt-0 text-center">
+          <h1
+            class="text-black text-4xl lg:text-5xl"
+            style="letter-spacing: 0.5px;"
+          >Game developers need better tooling</h1>
+          <p
+            class="text-grey-darker mt-4 text-xl leading-normal"
+          >It looks like everyone is reinventing the wheel, simply to beat each other to market.</p>
+        </div>
+      </div>
+    </section>
 
-          <h2 class="text-semi-bold text-xl">
-            My personal reason to start GameComponent
-          </h2>
+    <section class="pt-16">
+      <div class="container mx-auto md:clearfix text-black text-lg leading-roomy">
+        <div class="w-full">
+          <h2 class="text-semi-bold text-xl">My personal reason to start GameComponent</h2>
           <p class="mt-2 text-grey-darkest">
-            The idea for GameComponent started late 2018. As a fullstack developer I wanted to take a dive into game development.
+            The idea for GameComponent started late 2018. As a full-stack developer, I wanted to take a dive into game development.
             I used to do some game development during my teenage years however over time I transition more towards web development.
           </p>
 
           <p class="mt-8 text-grey-darkest">
-            Creating an online multiple players game is incredible hard and there are a lot of moving pieces.
+            Creating an online multiplayer game is incredibly hard and there are a lot of moving pieces.
             One thing that frustrated about game development is the fierce competition between studios.
             In the web development world a lot of companies and individuals collaborate to create awesome tech.
-            Yet when I look at game development world there is a lot less collaboration between studios.
+            Yet when I look at the game development world, there is a lot less collaboration between studios.
             It looks like everyone is reinventing the wheel, simply to beat each other to market.
           </p>
 
@@ -79,7 +63,7 @@
 
           <h2 class="text-semi-bold text-xl mt-8">The economy service</h2>
           <p class="mt-2 text-grey-darkest">
-            That's when we decided to focus on creating an inventory service. After a while we renamed it to economy service.
+            That's when we decided to focus on creating an inventory service. After a while, we renamed it to economy service.
             Simply because it's not just about items but also about virtual currencies and shops.
             wE want the economy service to be a developer centered tool, if the service lacks a feature a developer should be able to edit the service to get that feature in.
             A lot of closed source competitors don't allow this. So if their service lacks a feature you will have to work around it.
@@ -87,75 +71,48 @@
 
           <p class="mt-8 text-grey-darkest">
             For the foreseeable future will put our efforts into creating the best economy service possible.
-            Later on we will branch into other services.
+            Later on, we will branch into other services.
             You can expect more blog posts in the future.
-            The coming weeks we will talk about the roadmap for the economy service.
+            In the coming weeks, we will talk about the roadmap for the economy service.
           </p>
 
-          <h2 class="text-semi-bold text-xl mt-8">
-            Website now available online
-          </h2>
+          <h2 class="text-semi-bold text-xl mt-8">The website now available online</h2>
           <p class="mt-2 text-grey-darkest">
             The last month we have been working hard to create this website.
             It is still miles away from being perfect.
-            But for now it serves it's purpose.
+            But for now, it serves its purpose.
             This website will function as a hub for development around GameComponent's services.
           </p>
 
-          <div class="pt-16 uppercase text-xs font-bold text-grey-dark leading-normal">
-            WRITTEN ON APR 5, 2019
-          </div>
-        </div>
-
-        <div class="w-full lg:w-1/3 lg:float-left pt-8 lg:pt-0">
-          <div class="lg:pl-16">
-            <div class="bg-grey-lighter p-8 rounded">
-              <div class="text-black text-xl leading-tight">
-                Want to stay updated?
-              </div>
-              <div class="text-grey-darker leading-normal">
-                Follow us on Twitter
-              </div>
-              <div class="mt-4">
-                <a
-                  href="https://twitter.com/GameComponentHQ?ref_src=twsrc%5Etfw"
-                  class="twitter-follow-button"
-                  data-size="large"
-                  data-show-count="false"
-                  data-show-screen-name="false"
-                ></a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-              </div>
-            </div>
-          </div>
+          <div
+            class="pt-16 uppercase text-xs font-bold text-grey-dark leading-normal"
+          >WRITTEN ON APR 5, 2019</div>
         </div>
       </div>
     </section>
 
     <section class="pt-16 pb-32">
-      <div class="container mx-auto md:clearfix px-8 lg:px-16 text-center md:text-left">
-        <div class=" w-full md:w-auto md:float-left clearfix">
+      <div class="container mx-auto md:clearfix text-center md:text-left">
+        <div class="w-full md:w-auto md:float-left clearfix">
           <div class="w-full md:w-auto md:float-left">
             <img
               src="~assets/blog/people/niels_lanting.jpg"
-              alt=""
+              alt
               class="inline-block w-16 h-16 rounded-full shadow"
-            >
+            />
           </div>
 
           <div class="inline-block md:float-left md:ml-8">
             <div class="text-grey-darker leading-normal">
               <span class="font-semibold text-black text-xl">Niels Lanting</span>
-              <br>
+              <br />
               <span>Founder of GameComponent</span>
             </div>
           </div>
         </div>
 
         <div class="w-full md:w-auto overflow-hidden pt-8 md:pt-0 md:float-right px-8">
-          <social-share
-            description="Game developers need better tooling"
-          ></social-share>
+          <social-share description="Game developers need better tooling"></social-share>
         </div>
       </div>
     </section>
@@ -163,18 +120,18 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "nuxt-property-decorator"
-import SocialShare from '~/components/SocialShare.vue';
+import { Component, Vue } from "nuxt-property-decorator";
+import SocialShare from "~/components/SocialShare.vue";
 
 @Component({
   components: {
-    SocialShare,
-  },
+    SocialShare
+  }
 })
 export default class BlogItem extends Vue {
-  public head () {
+  public head() {
     return {
-      title: 'GameComponent - Game developers need better tooling'
+      title: "GameComponent - Game developers need better tooling"
     };
   }
 }

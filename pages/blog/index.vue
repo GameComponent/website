@@ -1,25 +1,33 @@
 <style scoped>
-  .background--game-developers-need-better-tooling {
-    background-image: url('~assets/blog/website-live/thumbnail.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
+.background--game-developers-need-better-tooling {
+  background-image: url("~assets/blog/website-live/thumbnail.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 
-  .background--kubernetes-the-platform-for-modern-multiplayer-games {
-    background-color: #eef9df;
-    background-image: url('~assets/blog/kubernetes-the-platform-for-modern-multiplayer-games/thumbnail.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-  }
+.background--kubernetes-the-platform-for-modern-multiplayer-games {
+  background-color: #eef9df;
+  background-image: url("~assets/blog/kubernetes-the-platform-for-modern-multiplayer-games/thumbnail.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
 
-  @media (min-width: 992px) {
-    .hover\:scale:hover {
-      transform: scale(1.01);
-      transition: .25s;
-    }
+.background--agones-stable-release {
+  background-color: #f5f5f5;
+  background-image: url("~assets/blog/agones-stable-release/agones.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+@media (min-width: 992px) {
+  .hover\:scale:hover {
+    transform: scale(1.01);
+    transition: 0.25s;
   }
+}
 </style>
 
 <template>
@@ -30,52 +38,102 @@
           <div class="border-b">
             <div>
               <div class="w-2 h-2 rounded-full inline-block v-mid bg-red-lighter"></div>
-              <span class="uppercase text-xs font-bold text-grey-darker leading-normal" style="letter-spacing: 0.5px;">
-                COMMUNITY
-              </span>
+              <span
+                class="uppercase text-xs font-bold text-grey-darker leading-normal"
+                style="letter-spacing: 0.5px;"
+              >COMMUNITY</span>
             </div>
 
-            <nuxt-link to="/blog/kubernetes-the-platform-for-modern-multiplayer-games" class="no-underline">
-              <h2 class="text-black mt-4 text-2xl leading-tight">
-                Kubernetes the platform for modern multiplayer games
-              </h2>
+            <nuxt-link to="/blog/agones-stable-release" class="no-underline">
+              <h2 class="text-black mt-4 text-2xl leading-tight">Agones releases stable 1.0</h2>
             </nuxt-link>
 
             <div class="text-grey-darker leading-normal mt-2">
-              by <a href="https://nielslanting.nl" target="_blank" class="no-underline text-blue">Niels Lanting</a> on Apr 18, 2019
+              by
+              <a
+                href="https://nielslanting.com"
+                target="_blank"
+                class="no-underline text-blue"
+              >Niels Lanting</a> on Sep 18, 2019
             </div>
 
-            <nuxt-link to="/blog/kubernetes-the-platform-for-modern-multiplayer-games" class="no-underline">
-              <div class="w-full mt-8 h-64 rounded background--kubernetes-the-platform-for-modern-multiplayer-games hover:scale"></div>
-              <p class="mt-4 text-grey-darker pb-16">
-                Are you not yet running a cloud native game system?
-              </p>
+            <nuxt-link to="/blog/agones-stable-release" class="no-underline">
+              <div class="w-full mt-8 h-64 rounded background--agones-stable-release hover:scale"></div>
+              <p
+                class="mt-4 text-grey-darker pb-16"
+              >Host, Run and Scale dedicated game servers on Kubernetes.</p>
+            </nuxt-link>
+          </div>
+
+          <div class="border-b pt-16">
+            <div>
+              <div class="w-2 h-2 rounded-full inline-block v-mid bg-red-lighter"></div>
+              <span
+                class="uppercase text-xs font-bold text-grey-darker leading-normal"
+                style="letter-spacing: 0.5px;"
+              >COMMUNITY</span>
+            </div>
+
+            <nuxt-link
+              to="/blog/kubernetes-the-platform-for-modern-multiplayer-games"
+              class="no-underline"
+            >
+              <h2
+                class="text-black mt-4 text-2xl leading-tight"
+              >Kubernetes the platform for modern multiplayer games</h2>
+            </nuxt-link>
+
+            <div class="text-grey-darker leading-normal mt-2">
+              by
+              <a
+                href="https://nielslanting.com"
+                target="_blank"
+                class="no-underline text-blue"
+              >Niels Lanting</a> on Apr 18, 2019
+            </div>
+
+            <nuxt-link
+              to="/blog/kubernetes-the-platform-for-modern-multiplayer-games"
+              class="no-underline"
+            >
+              <div
+                class="w-full mt-8 h-64 rounded background--kubernetes-the-platform-for-modern-multiplayer-games hover:scale"
+              ></div>
+              <p
+                class="mt-4 text-grey-darker pb-16"
+              >Are you not yet running a cloud native game system?</p>
             </nuxt-link>
           </div>
 
           <div class="pt-16">
             <div>
               <div class="w-2 h-2 rounded-full inline-block v-mid bg-blue"></div>
-              <span class="uppercase text-xs font-bold text-grey-darker leading-normal" style="letter-spacing: 0.5px;">
-                WEBSITE
-              </span>
+              <span
+                class="uppercase text-xs font-bold text-grey-darker leading-normal"
+                style="letter-spacing: 0.5px;"
+              >WEBSITE</span>
             </div>
 
             <nuxt-link to="/blog/game-developers-need-better-tooling" class="no-underline">
-              <h2 class="text-black mt-4 text-2xl leading-tight">
-                Game developers need better tooling
-              </h2>
+              <h2 class="text-black mt-4 text-2xl leading-tight">Game developers need better tooling</h2>
             </nuxt-link>
 
             <div class="text-grey-darker leading-normal mt-2">
-              by <a href="https://nielslanting.nl" target="_blank" class="no-underline text-blue">Niels Lanting</a> on Apr 5, 2019
+              by
+              <a
+                href="https://nielslanting.com"
+                target="_blank"
+                class="no-underline text-blue"
+              >Niels Lanting</a> on Apr 5, 2019
             </div>
 
             <nuxt-link to="/blog/game-developers-need-better-tooling" class="no-underline">
-              <div class="w-full mt-8 h-64 rounded bg-blue-light background--game-developers-need-better-tooling hover:scale"></div>
-              <p class="mt-4 text-grey-darker pb-16">
-                It looks like everyone is reinventing the wheel, simply to beat each other to market.
-              </p>
+              <div
+                class="w-full mt-8 h-64 rounded bg-blue-light background--game-developers-need-better-tooling hover:scale"
+              ></div>
+              <p
+                class="mt-4 text-grey-darker pb-16"
+              >It looks like everyone is reinventing the wheel, simply to beat each other to market.</p>
             </nuxt-link>
           </div>
         </div>
@@ -83,12 +141,8 @@
         <div class="w-full lg:w-1/3 lg:float-left">
           <div class="lg:pl-16">
             <div class="bg-grey-lighter p-8 rounded">
-              <div class="text-black text-xl leading-tight">
-                Want to stay updated?
-              </div>
-              <div class="text-grey-darker leading-normal">
-                Follow us on Twitter
-              </div>
+              <div class="text-black text-xl leading-tight">Want to stay updated?</div>
+              <div class="text-grey-darker leading-normal">Follow us on Twitter</div>
               <div class="mt-4">
                 <a
                   href="https://twitter.com/GameComponentHQ?ref_src=twsrc%5Etfw"
@@ -104,18 +158,17 @@
         </div>
       </div>
     </section>
-
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "nuxt-property-decorator"
+import { Component, Vue } from "nuxt-property-decorator";
 
 @Component
 export default class Blog extends Vue {
-  public head () {
+  public head() {
     return {
-      title: 'GameComponent - Blog'
+      title: "GameComponent - Blog"
     };
   }
 }
