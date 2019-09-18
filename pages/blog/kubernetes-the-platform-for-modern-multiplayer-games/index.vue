@@ -10,47 +10,31 @@
 </style>
 
 <template>
-  <div>
-    <section class="background--light-green">
-      <div class="container mx-auto clearfix pt-16 md:pt-32 pb-16 lg:pb-0 px-8 lg:px-16">
-        <div class="w-full md:w-1/3 md:float-right flex justify-center items-center">
+  <div class="container mx-auto px-8" style="margin-top: 160px; max-width: 800px;">
+    <section>
+      <div class="background--light-green container mx-auto clearfix pt-16 md:pt-32 pb-16 lg:pb-0 mx-8 lg:mx-16 rounded-sm">
+        <div class="w-full flex justify-center items-center">
           <img src="~assets/blog/kubernetes-the-platform-for-modern-multiplayer-games/thumbnail.svg" alt="">
         </div>
+      </div>
+    </section>
 
-        <div class="w-full md:w-2/3 pt-8 md:pt-0 md:float-left">
-          <h1 class="text-black text-3xl lg:text-4xl w-128" style="letter-spacing: 0.5px;">
+    <section class="pt-16">
+      <div class="container mx-auto clearfix pb-16 lg:pb-0">
+        <div class="w-full pt-8 md:pt-0 text-center">
+          <h1 class="text-black text-4xl lg:text-5xl" style="letter-spacing: 0.5px;">
             Kubernetes the platform for modern multiplayer games
           </h1>
-          <p class="text-grey-darker mt-4 text-xl leading-normal mb-8">
+          <p class="text-grey-darker mt-4 text-xl leading-normal">
             Are you not running a cloud native game system yet?
           </p>
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="container mx-auto md:clearfix">
-        <div class="h-12 pt-16 px-8 lg:px-16 uppercase text-xs font-bold text-grey-dark leading-normal">
-          <div>
-            <span style="letter-spacing: 0.5px;">
-              <nuxt-link to="/blog" class="no-underline text-grey-dark hover:text-blue cursor-pointer">
-                BLOG
-              </nuxt-link>
-            </span>
-            <span class="mx-2" style="letter-spacing: 0.5px;">
-              &rarr;
-            </span>
-            <span style="letter-spacing: 0.5px;">
-              THIS ARTICLE
-            </span>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="pt-16">
-      <div class="container mx-auto md:clearfix px-8 lg:px-16 text-black text-lg leading-roomy">
-        <div class="w-full lg:w-2/3 lg:float-left">
+      <div class="container mx-auto md:clearfix text-black text-lg leading-roomy">
+        <div class="w-full">
           <h2 class="text-semi-bold text-xl">
             The industry
           </h2>
@@ -165,33 +149,11 @@
             WRITTEN ON APR 18, 2019
           </div>
         </div>
-        <div class="w-full lg:w-1/3 lg:float-left pt-8 lg:pt-0">
-          <div class="lg:pl-16">
-            <div class="bg-grey-lighter p-8 rounded">
-              <div class="text-black text-xl leading-tight">
-                Want to stay updated?
-              </div>
-              <div class="text-grey-darker leading-normal">
-                Follow us on Twitter
-              </div>
-              <div class="mt-4">
-                <a
-                  href="https://twitter.com/GameComponentHQ?ref_src=twsrc%5Etfw"
-                  class="twitter-follow-button"
-                  data-size="large"
-                  data-show-count="false"
-                  data-show-screen-name="false"
-                ></a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
     <section class="pt-16 pb-32">
-      <div class="container mx-auto md:clearfix px-8 lg:px-16 text-center md:text-left">
+      <div class="container mx-auto md:clearfix text-center md:text-left">
         <div class=" w-full md:w-auto md:float-left clearfix">
           <div class="w-full md:w-auto md:float-left">
             <img
