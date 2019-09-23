@@ -2,7 +2,8 @@ import NuxtConfiguration from "@nuxt/config";
 
 const config: NuxtConfiguration = {
   env: {
-    baseUrl: process.env.BASE_URL || "http://localhost:3000"
+    baseUrl: process.env.BASE_URL || "http://localhost:3000",
+    googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY || '',
   },
   head: {
     title: "GameComponent",
