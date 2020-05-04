@@ -42,7 +42,7 @@
     <section class="py-16">
       <div class="container mx-auto px-8 lg:px-16">
         <form
-          action="https://discordapp.com/api/webhooks/564035125692727307/2ODfWWuXCflurd5mttSu0aB2ttx37YaN2FslKyoQQcWMRUJdIrYvc5Tz4URe3UifZa51"
+          action="https://discordapp.com/api/webhooks/706803275311087676/Ni-HRGLIp8vX9rKLLB1YkR0gGsZKFm3cOqfN_10y90s63hleD7CxyYa52e9tsfUMpWvo"
           method="POST"
           enctype="multipart/form-data"
           @submit="onSubmitForm"
