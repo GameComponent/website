@@ -4,7 +4,7 @@
   "version": "2.4.5",
   "private": true,
   "dependencies": {
-    "@nuxtjs/axios": "5.6.0",
+    "@nuxtjs/axios": "5.12.4",
     "@nuxtjs/google-tag-manager": "^2.2.1",
     "core-js": "^2.6.5",
     "nuxt": "^2.5.1",
