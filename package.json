@@ -24,6 +24,6 @@
     "@nuxt/typescript": "^2.5.1",
     "@nuxt/vue-app": "^2.5.1",
     "@types/node": "12.7.5",
-    "@types/webpack-env": "1.14.0"
+    "@types/webpack-env": "1.16.1"
   }
 }
